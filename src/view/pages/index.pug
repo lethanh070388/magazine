@@ -1,0 +1,523 @@
+extends ../layouts/layout_homepage.pug
+
+include ../mixins/_modal.pug
+include ../mixins/_tab.pug
+block append main-content
+    .container.search-wrapper.mt-5
+        .row
+            .col-md-8
+                +tabs([{id:'tabVBL',name:'Văn bản luật'},{id:'tabDM',name:'Định mức'},{id:'tabDG',name:'Đơn giá'},{id:'tabCBGDP',name:'Công bố giá địa phương'},{id:'tabVBM',name:'Văn bản mẫu'}],"Tra cứu")
+                    +tab-item('tabVBL','true')
+                        .search_option
+                            h6.text-uppercase Tìm văn bản pháp luật Việt Nam
+                            .input-group.mb-3
+                                input.form-control.br-none(type="email" placeholder="Nhập nội dung văn bản cần tìm..." aria-label="Enter finding text" aria-describedby="button-addon2")
+                                .input-group-append
+                                    button.btn.btn-white(type="button" id="button-addon2")
+                                        i.fas.fa-search
+                            .search_advanced
+                                span.text-green.pr-2.font-bold Tìm kiếm nâng cao
+                                .form-check.form-check-inline
+                                    input.form-check-input(type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance1" value="optionAll")
+                                    label.form-check-label(for="rdoSearchAdvance1") Tất cả
+                                .form-check.form-check-inline
+                                    input.form-check-input(type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance2" value="optionTitle")
+                                    label.form-check-label(for="rdoSearchAdvance2") Tiêu đề
+                                .form-check.form-check-inline
+                                    input.form-check-input(type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance3" value="optionNumber")
+                                    label.form-check-label(for="rdoSearchAdvance3") Số hiệu văn bản
+                                .form-check.form-check-inline
+                                    input.form-check-input(type="checkbox" name="checkFindByWords" id="chkFindByWords" value="optionFindByWord")
+                                    label.form-check-label(for="chkFindByWords") Chính xác cụm từ
+                            .form-row.mt-3
+                                .form-group.col-sm-6.col-md-3
+                                    input#iptFrom.form-control.border-none.datepicker(type="text" placeholder="Từ ngày (Ng/Thg/Năm)")
+                                .form-group.col-sm-6.col-md-3
+                                    input#iptFrom.form-control.border-none.datepicker(type="text" placeholder="Đến ngày (Ng/Thg/Năm)")
+                                .form-group.col-sm-6.col-md-3
+                                    select#ddlType.form-control.border-none
+                                        option(selected disabled) Loại văn bản
+                                        option(value="1") Bản ghi nhớ
+                                        option(value="2") Báo cáo
+                                        option(value="3") Biên bản
+                                .form-group.col-sm-6.col-md-3
+                                    select#ddlWhere.form-control.border-none
+                                        option(selected disabled) Cơ quan ban hành
+                                        option(value="1") Ban Bí Thư
+                                        option(value="2") Ban Cán sự Đảng
+                                .form-group.col-sm-6.col-md-3
+                                    select#ddlStatus.form-control.border-none
+                                        option(selected disabled) Tình trạng hiệu lực
+                                        option(value="1") Còn hiệu lực
+                                        option(value="2") Không còn hiệu lực
+                                .form-group.col-sm-6.col-md-3
+                                    select#ddlField.form-control.border-none
+                                        option(selected disabled) Lĩnh vực hoạt động
+                                        option(value="1") An ninh trật tự
+                                        option(value="2") An ninh Quốc gia
+                                        option(value="3") Bảo hiểm
+                                .form-group.col-sm-6.col-md-3
+                                    select#ddlLang.form-control.border-none
+                                        option(selected disabled) Ngôn ngữ
+                                        option(value="1") Tiếng việt
+                                        option(value="2") English
+                                .form-group.col-sm-6.col-md-3
+                                    input#iptSigner.form-control.border-none(type="text" placeholder="Người ký...")
+                    +tab-item('tabDM')
+                        p Từ khoá: Số Hiệu, Tiêu đề hoặc Nội dung ngắn gọn của Dự thảo...
+                        .input-group.mb-3
+                            input.form-control(type="email" placeholder="Tìm văn bản pháp luật" aria-label="Enter your mail" aria-describedby="button-addon2")
+                            .input-group-append
+                                button.btn.btn-white(type="button" id="button-addon2")
+                                    i.fas.fa-search
+                    +tab-item('tabDG')
+                        p Từ khoá: Số Hiệu, Tiêu đề hoặc Nội dung ngắn gọn của Công văn...
+                        .input-group.mb-3
+                            input.form-control(type="email" placeholder="Tìm văn bản pháp luật" aria-label="Enter your mail" aria-describedby="button-addon2")
+                            .input-group-append
+                                button.btn.btn-white(type="button" id="button-addon2")
+                                    i.fas.fa-search
+                    +tab-item('tabCBGDP')
+                        p Từ khoá: Số Hiệu, Tiêu đề hoặc Nội dung ngắn gọn của Tiêu Chuẩn Việt Nam...
+                        .input-group.mb-3
+                            input.form-control(type="email" placeholder="Tìm văn bản pháp luật" aria-label="Enter your mail" aria-describedby="button-addon2")
+                            .input-group-append
+                                button.btn.btn-white(type="button" id="button-addon2")
+                                    i.fas.fa-search
+                    +tab-item('tabVBM')
+                        p Tra cứu xử phạt vi phạm hành chính
+                        .input-group.mb-3
+                            input.form-control(type="email" placeholder="Tìm văn bản pháp luật" aria-label="Enter your mail" aria-describedby="button-addon2")
+                            .input-group-append
+                                button.btn.btn-white(type="button" id="button-addon2")
+                                    i.fas.fa-search
+            .col-md-4
+                .ads-side
+                    img.w-100(src="../assets/ads-side.jpg", alt="")
+    .container.mt-5
+        .banner
+            .news.main-news
+                img(src="../assets/img/15-534x462.jpg", alt="")
+                .news_content
+                    a(href="#").news_label Photography
+                    h3.news_title
+                        a(href="#") Celebrity make-up artist Gary Cockerill shows you beauty trick
+                    .d-flex.news_info
+                        span.news_author David Lee
+                        span.px-1 -
+                        span.news_time September 24, 2015
+            .grid-news
+                .news
+                    img(src="../assets/img/9-265x198.jpg", alt="")
+                    .news_content
+                        a(href="#").news_label Fashion
+                        h6.news_title
+                            a(href="#") Fashion Week Parties: Night 4
+                .news
+                    img(src="../assets/img/18-265x198.jpg", alt="")
+                    .news_content
+                        a(href="#").news_label TECH
+                        h6.news_title
+                            a(href="#") Gigabyte GeForce GTX 950 Review: Pricing Is Everything
+                .news
+                    img(src="../assets/img/54-265x198.jpg", alt="")
+                    .news_content
+                        a(href="#").news_label ART
+                        h6.news_title
+                            a(href="#") A Thomas Hart Benton Mural, Repurposed as a Writing Desk
+                .news
+                    img(src="../assets/img/61-265x198.jpg", alt="")
+                    .news_content
+                        a(href="#").news_label HEALTH
+                        h6.news_title
+                            a(href="#") The Workout That Burns More Calories Than Running
+    .container.mt-5
+        .row
+            .col-lg-8
+                +tabs([{id: 'tab1',name: 'Văn bản luật'},{id: 'tab2',name: 'Định mức'},{id: 'tab3',name: 'Đơn giá'}],"Tin tức")         
+                    +tab-item('tab1','true')
+                        .row
+                            .col-md-6
+                                .post.post-wrapper
+                                    .post_img
+                                        img(src="../assets/img/1-324x235.jpg", alt="")
+                                        .post_label.absolute Văn bản luật
+                                    .post_body
+                                        h5.post_title
+                                            a(href="#" title="Georgian soldier helped in attack near US base in Afghanistan") Georgian soldier helped in attack near US base in Afghanistan
+                                        .post_info
+                                            span.post_author Author - 
+                                            span.post_time March 25, 2018
+                                        .post_content
+                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ex explicabo quos amet maxime aut voluptates rerum deleniti? Debitis doloremque excepturi quia sit. Corrupti blanditiis necessitatibus, odio nam sequi eveniet...
+                            .col-md-6.list-wrapper
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/3-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="Cliffs of Moher reach 1 million visitors for 2016") Cliffs of Moher reach 1 million visitors for 2016
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/4-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="A Look at How Social & Mobile Gaming Increase Sales") A Look at How Social &amp; Mobile Gaming Increase Sales
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/5-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="Things to Look For in a Financial Trading Platform") Things to Look For in a Financial Trading Platform
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/6-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="Kansas City has a massive network of underground caves") Kansas City has a massive network of underground caves
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/2-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="Kansas City has a massive network of underground caves") Kansas City has a massive network of underground caves
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .text-right
+                                    a.btn.btn-outline-primary(href="#") Xem thêm
+                    +tab-item('tab2')
+                        .row
+                            .col-sm-6
+                                .post.post-wrapper
+                                    .post_img
+                                        img(src="../assets/img/15-324x235.jpg", alt="")
+                                        .post_label.absolute Định mức
+                                    .post_body
+                                        h5.post_title
+                                            a(href="#" title="Celebrity make-up artist Gary Cockerill shows you beauty trick") Celebrity make-up artist Gary Cockerill shows you beauty trick
+                                        .post_info
+                                            span.post_author Author - 
+                                            span.post_time March 25, 2018
+                                        .post_content
+                                            p All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... 
+                            .col-sm-6.list-wrapper
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/16-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="Cliffs of Moher reach 1 million visitors for 2016") Cliffs of Moher reach 1 million visitors for 2016
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/14-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="A Look at How Social & Mobile Gaming Increase Sales") A Look at How Social &amp; Mobile Gaming Increase Sales
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/13-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="Things to Look For in a Financial Trading Platform") Things to Look For in a Financial Trading Platform
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/12-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="Kansas City has a massive network of underground caves") Kansas City has a massive network of underground caves
+                                        .post_info
+                                            span.post_time March 25, 2018
+                    +tab-item('tab3')
+                        .row
+                            .col-sm-6
+                                .post.post-wrapper
+                                    .post_img
+                                        img(src="../assets/img/1-324x235.jpg", alt="")
+                                        .post_label.absolute Đơn giá
+                                    .post_body
+                                        h5.post_title
+                                            a(href="#" title="Georgian soldier helped in attack near US base in Afghanistan") Georgian soldier helped in attack near US base in Afghanistan
+                                        .post_info
+                                            span.post_author Author - 
+                                            span.post_time March 25, 2018
+                                        .post_content
+                                            p All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... 
+                            .col-sm-6.list-wrapper
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/3-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="Cliffs of Moher reach 1 million visitors for 2016") Cliffs of Moher reach 1 million visitors for 2016
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/4-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="A Look at How Social & Mobile Gaming Increase Sales") A Look at How Social &amp; Mobile Gaming Increase Sales
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/5-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="Things to Look For in a Financial Trading Platform") Things to Look For in a Financial Trading Platform
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/6-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="Kansas City has a massive network of underground caves") Kansas City has a massive network of underground caves
+                                        .post_info
+                                            span.post_time March 25, 2018
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/2-100x70.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="Kansas City has a massive network of underground caves") Kansas City has a massive network of underground caves
+                                        .post_info
+                                            span.post_time March 25, 2018
+            .col-lg-4
+                +tabs([{id: 'tabR1',name: 'Tất cả'},{id: 'tabR2',name: 'Khác'}],"Xem nhiều")         
+                    +tab-item('tabR1','true')
+                        .row
+                            .col-lg-12.col-md-6.list-wrapper
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/24-150x150.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
+                                        .post_info
+                                            .post_label Văn bản luật
+                                            .post_time.pt-1 March 25, 2018
+                                .post.post-wrapper.list-item
+                                        .post_img
+                                            img(src="../assets/img/1-150x150.jpg", alt="")
+                                        .post_body
+                                            h6.post_title
+                                                a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
+                                            .post_info
+                                                .post_label Định mức
+                                                .post_time.pt-1 March 25, 2018
+                            .col-lg-12.col-md-6.list-wrapper
+                                .post.post-wrapper.list-item
+                                        .post_img
+                                            img(src="../assets/img/15-150x150.jpg", alt="")
+                                        .post_body
+                                            h6.post_title
+                                                a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
+                                            .post_info
+                                                .post_label Đơn giá
+                                                .post_time.pt-1 March 25, 2018
+                                .post.post-wrapper.list-item
+                                        .post_img
+                                            img(src="../assets/img/18-150x150.jpg", alt="")
+                                        .post_body
+                                            h6.post_title
+                                                a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
+                                            .post_info
+                                                .post_label Công bố giá địa phương
+                                                .post_time.pt-1 March 25, 2018
+                    +tab-item('tabR2')
+                        .row
+                            .col.list-wrapper
+                                .post.post-wrapper.list-item
+                                    .post_img
+                                        img(src="../assets/img/1-150x150.jpg", alt="")
+                                    .post_body
+                                        h6.post_title
+                                            a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
+                                        .post_info
+                                            .post_label Văn bản mẫu
+                                            .post_time.pt-1 March 25, 2018
+                                .post.post-wrapper.list-item
+                                        .post_img
+                                            img(src="../assets/img/15-150x150.jpg", alt="")
+                                        .post_body
+                                            h6.post_title
+                                                a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
+                                            .post_info
+                                                .post_label Văn bản mẫu
+                                                .post_time.pt-1 March 25, 2018
+                                .post.post-wrapper.list-item
+                                        .post_img
+                                            img(src="../assets/img/18-150x150.jpg", alt="")
+                                        .post_body
+                                            h6.post_title
+                                                a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
+                                            .post_info
+                                                .post_label Văn bản mẫu
+                                                .post_time.pt-1 March 25, 2018
+                                .post.post-wrapper.list-item
+                                        .post_img
+                                            img(src="../assets/img/24-150x150.jpg", alt="")
+                                        .post_body
+                                            h6.post_title
+                                                a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
+                                            .post_info
+                                                .post_label Văn bản mẫu
+                                                .post_time.pt-1 March 25, 2018
+    .container.mt-5
+        .row
+            .col-md-4
+                .posts-group
+                    .group_heading.blue-line.font-title.mb-3 Văn bản luật
+                    .group_content
+                        .post.post-wrapper
+                            .post_img
+                                img(src="../assets/img/18-324x160.jpg", alt="")
+                                .post_label.absolute Văn bản luật
+                            .post_body
+                                h5.post_title
+                                    a(href="#" title="Georgian soldier helped in attack near US base in Afghanistan") Georgian soldier helped in attack near US base in Afghanistan
+                                .post_info
+                                    span.post_author Author - 
+                                    span.post_time March 25, 2018
+                                .post_content
+                                    p All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... 
+                        .post.post-wrapper.list-item
+                            .post_img
+                                img(src="../assets/img/23-100x70.jpg", alt="")
+                            .post_body
+                                h6.post_title
+                                    a(href="#" title="Cliffs of Moher reach 1 million visitors for 2016") Cliffs of Moher reach 1 million visitors for 2016
+                                .post_info
+                                    span.post_time March 25, 2018
+                        .post.post-wrapper.list-item
+                            .post_img
+                                img(src="../assets/img/22-100x70.jpg", alt="")
+                            .post_body
+                                h6.post_title
+                                    a(href="#" title="A Look at How Social & Mobile Gaming Increase Sales") A Look at How Social &amp; Mobile Gaming Increase Sales
+                                .post_info
+                                    span.post_time March 25, 2018
+                    .group-control.my-3
+                        a.control.disabled(href="#")
+                            i.fas.fa-chevron-left
+                        a.control(href="#")
+                            i.fas.fa-chevron-right
+            .col-md-4
+                .posts-group
+                    .group_heading.red-line.font-title.mb-3 Định mức
+                    .group_content
+                        .post.post-wrapper
+                            .post_img
+                                img(src="../assets/img/37-324x160.jpg", alt="")
+                                .post_label.absolute Định mức
+                            .post_body
+                                h5.post_title
+                                    a(href="#" title="Georgian soldier helped in attack near US base in Afghanistan") Georgian soldier helped in attack near US base in Afghanistan
+                                .post_info
+                                    span.post_author Author - 
+                                    span.post_time March 25, 2018
+                                .post_content
+                                    p All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... 
+                        .post.post-wrapper.list-item
+                            .post_img
+                                img(src="../assets/img/61-100x70.jpg", alt="")
+                            .post_body
+                                h6.post_title
+                                    a(href="#" title="Cliffs of Moher reach 1 million visitors for 2016") Cliffs of Moher reach 1 million visitors for 2016
+                                .post_info
+                                    span.post_time March 25, 2018
+                        .post.post-wrapper.list-item
+                            .post_img
+                                img(src="../assets/img/39-100x70.jpg", alt="")
+                            .post_body
+                                h6.post_title
+                                    a(href="#" title="A Look at How Social & Mobile Gaming Increase Sales") A Look at How Social &amp; Mobile Gaming Increase Sales
+                                .post_info
+                                    span.post_time March 25, 2018
+                    .group-control.my-3
+                        a.control.disabled(href="#")
+                            i.fas.fa-chevron-left
+                        a.control(href="#")
+                            i.fas.fa-chevron-right
+            .col-md-4
+                .posts-group
+                    .group_heading.green-line.font-title.mb-3 Đơn giá
+                    .group_content
+                        .post.post-wrapper
+                            .post_img
+                                img(src="../assets/img/38-324x160.jpg", alt="")
+                                .post_label.absolute Đơn giá
+                            .post_body
+                                h5.post_title
+                                    a(href="#" title="Georgian soldier helped in attack near US base in Afghanistan") Georgian soldier helped in attack near US base in Afghanistan
+                                .post_info
+                                    span.post_author Author - 
+                                    span.post_time March 25, 2018
+                                .post_content
+                                    p All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... 
+                        .post.post-wrapper.list-item
+                            .post_img
+                                img(src="../assets/img/10-100x70.jpg", alt="")
+                            .post_body
+                                h6.post_title
+                                    a(href="#" title="Cliffs of Moher reach 1 million visitors for 2016") Cliffs of Moher reach 1 million visitors for 2016
+                                .post_info
+                                    span.post_time March 25, 2018
+                        .post.post-wrapper.list-item
+                            .post_img
+                                img(src="../assets/img/20-100x70.jpg", alt="")
+                            .post_body
+                                h6.post_title
+                                    a(href="#" title="A Look at How Social & Mobile Gaming Increase Sales") A Look at How Social &amp; Mobile Gaming Increase Sales
+                                .post_info
+                                    span.post_time March 25, 2018
+                    .group-control.my-3
+                        a.control.disabled(href="#")
+                            i.fas.fa-chevron-left
+                        a.control(href="#")
+                            i.fas.fa-chevron-right
+    .container
+        .row
+            .col-sm-6.col-md-3
+                a.statistic.box-1(href="#")
+                    .content.text-center
+                        .text-uppercase Văn bản luật
+            .col-sm-6.col-md-3
+                a.statistic.box-2(href="#")
+                    .content.text-center
+                        .text-uppercase Định mức
+            .col-sm-6.col-md-3
+                a.statistic.box-3(href="#")
+                    .content.text-center
+                        .text-uppercase Đơn giá
+            .col-sm-6.col-md-3
+                a.statistic.box-4(href="#")
+                    .content.text-center
+                        .text-uppercase 
+                            |Công bố giá 
+                            br
+                            |địa phương
+block script-append
+    script.
+        $(function(){
+            $('.datepicker').datepicker({
+                format: "dd/mm/yyyy",
+                todayBtn: "linked"
+            });
+        })
+    

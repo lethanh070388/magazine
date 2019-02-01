@@ -1,0 +1,78 @@
+header.header-nav
+    .container
+        .row.m-0
+            .socials
+                a(href="#")
+                    i.fab.fa-facebook-f
+                a(href="")
+                    i.fas.fa-envelope
+                a(href="")
+                    i.fab.fa-twitter
+                a(href="")
+                    i.fab.fa-youtube
+                a(href="")
+                    i.fab.fa-instagram
+            .user-section.ml-auto
+                a(href="#" data-toggle="modal" data-target="#modalLogin") Đăng nhập
+                a(href="./register.html") Đăng ký
+.header-banner
+    .container.py-4
+        .row.m-0.justify-content-center.justify-content-lg-between.flex-lg-nowrap
+            .logo
+                a(href="./index.html")
+                    img(src="../assets/logo-header.png", alt="")
+            .ads-header
+                a(href="#")
+                    img(src="../assets/ads-header.jpg", alt="")
+.navbar.navbar-expand-md.navbar-dark.bg-dark.bg-nav-scroll.custom-nav
+    .container
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+
+        .collapse.navbar-collapse#navbarSupportedContent
+            ul.navbar-nav
+                li.nav-item.active
+                    a.nav-link(href="./index.html")
+                        |Trang chủ
+                        span.sr-only (current)
+                
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(href="#" id="navbarDropdownNews" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Tra cứu
+                    .dropdown-menu(aria-labelledby="navbarDropdownNews")
+                        a.dropdown-item(href="#") Văn bản luật
+                        a.dropdown-item(href="#") Định mức
+                        a.dropdown-item(href="#") Đơn giá
+                        a.dropdown-item(href="#") Giá VLXD
+                        a.dropdown-item(href="#") Văn bản mẫu
+                li.nav-item
+                    a.nav-link(href="#") Văn bản luật
+                li.nav-item
+                    a.nav-link(href="#") Định mức
+                li.nav-item
+                    a.nav-link(href="#") Đơn giá
+                li.nav-item
+                    a.nav-link(href="#") Giá VLXD
+                li.nav-item
+                    a.nav-link(href="#") Văn bản mẫu
+
+//- MODAL LOGIN
+#modalLogin.modal.fade(tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true")
+    .modal-dialog(role="document")
+        .modal-content
+            .modal-header
+                h5.modal-title.w-100.text-center.text-green.font-bold#modalLoginLabel Đăng nhập
+                button.close(type="button" data-dismiss="modal" aria-label="Close")
+                    span(aria-hidden="true") &times;
+            .modal-body
+                form.form-group.needs-validation.pt-4(action="#" novalidate)
+                    .form-group
+                        input.form-control(type="text" aria-describedby="username" placeholder="Tên đăng nhập hoặc email" required)
+                        .invalid-feedback Sai tên đăng nhập hoặc email
+                    .form-group
+                        input.form-control(type="text" aria-describedby="password" placeholder="Nhập password" required)
+                        .invalid-feedback Sai password
+                    .form-group.text-right
+                        button.btn.btn-outline-primary(type="submit") Đăng nhập
+                    .form-group.text-right
+                        a.text-blue.nowrap(href="./register.html") Đăng ký | 
+                        a.text-blue.nowrap(href="./forget_password.html") Quên mật khẩu?

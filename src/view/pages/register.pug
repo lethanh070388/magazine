@@ -1,0 +1,81 @@
+extends ../layouts/layout.pug
+
+block append main-content
+    .container.mt-5
+        .row.no-gutters.justify-content-center
+            .col-md-10.col-lg-8.col-xl-7.bg-light.py-4.px-3
+                form(action="#" novalidate).form-register.needs-validation.container-fluid
+                    .row
+                        .col.px-1
+                            .form-group.text-left
+                                label(for="inputUser") 
+                                    |Tên thành viên 
+                                    span.text-tomato *
+                                input.form-control#inputUser(type="text" placeholder="" required)
+                                .invalid-feedback Tên đăng nhập không hợp lệ
+                    .row
+                        .col.px-1
+                            .form-group.text-left
+                                label(for="inputEmail") 
+                                    |Email 
+                                    span.text-tomato *
+                                input.form-control#inputEmail(type="email" aria-describedby="emailHelp" placeholder="" required)
+                                .invalid-feedback Email không chính xác
+                    .row
+                        .col-sm-6.px-1
+                            .form-group.text-left
+                                label(for="inputPassword") 
+                                    |Mật khẩu 
+                                    span.text-tomato *
+                                input.form-control#inputConfirmPassword(type="password" placeholder="" required)
+                                .invalid-feedback Mật khẩu không hợp lệ
+                        .col-sm-6.px-1
+                            .form-group.text-left
+                                label(for="inputConfirmPassword") 
+                                    |Xác nhận mật khẩu 
+                                    span.text-tomato *
+                                input.form-control#inputConfirmPassword(type="password" placeholder="" required)
+                                .invalid-feedback Mật khẩu xác nhận không hợp lệ
+                    .row
+                        .col.px-1
+                            .form-group.text-left
+                                label(for="inputMobile") 
+                                    |Điện thoại di động 
+                                    span.text-tomato *
+                                input.form-control#inputMobile(type="text" placeholder="" required)
+                                .invalid-feedback Số điện thoại không hợp lệ
+                    .row
+                        .col-sm-6.px-1
+                            .form-group.text-left
+                                label(for="inputPhone") Điện thoại cố định
+                                input.form-control#inputPhone(type="text" placeholder="" required)
+                                .invalid-feedback Số điện thoại không hợp lệ
+                        .col-sm-6.px-1
+                            .form-group.text-left
+                                label(for="inputCode") Mã vùng
+                                select.form-control
+                                    option(value="0" disabled selected) Chọn mã vùng
+                                    option(value="28") 028-Hồ Chí Minh
+                                    option(value="86") 024-Hà Nội
+                                    option(value="236") 0236-Đà Nẵng
+                                    option(value="236") 0225-Hải Phòng
+                                    option(value="236") 0292-Cần Thơ
+                                .invalid-feedback Vui lòng chọn mã vùng
+                    .row
+                        .col.px-1
+                            .form-group.form-check
+                                input.form-check-input#checkPolicy(type="checkbox" required)
+                                label.form-check-label(for="checkPolicy")
+                                    | Tôi đã đọc và đồng ý   
+                                    a.font-bold(href="#") Thỏa ước dịch vụ
+                                .invalid-feedback Vui lòng đọc và đồng ý với Thỏa ước dịch vụ
+                            .form-group.text-center
+                                button.btn.btn-primary(type="submit") Đăng ký
+                                button.btn.btn-secondary Hủy bỏ
+                    .row
+                        .col.px-1
+                            small
+                                | Nếu bạn gặp khó khăn vui lòng 
+                                a(href="# ") bẩm vào đây 
+                                |để được sự hổ trợ của 
+                                span.text-green.font-bolder.text-uppercase baogia.vn

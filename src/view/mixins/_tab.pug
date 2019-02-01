@@ -1,0 +1,26 @@
+mixin tabs(list=[{id:"A", name:"Tab A"},{id:"B", name:"Tab B"}],heading='')
+    ul.nav.nav-tabs.tabs(role="tablist")
+        .tabs_heading.font-title= heading
+        each val,index in list
+            if index == 0
+                li.nav-item
+                    a.active(data-toggle="tab" href="#tab"+(val.id))= val.name
+            else
+                li.nav-item
+                    a(data-toggle="tab" href="#tab"+(val.id))= val.name
+    .tab-content.py-1.py-sm-3
+        if block
+            block
+mixin tab-item(id='A',active='false')
+    if active == 'true'
+        .container.tab-pane.active.p-0(id="tab"+(id))
+            .row.no-gutters
+                .col
+                    if block
+                        block
+    else
+        .container.tab-pane.p-0(id="tab"+(id))
+            .row.no-gutters
+                .col
+                    if block
+                        block

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+// @font-face {
+//     font-family: ExampleFont;
+//     src: url(/path/to/fonts/examplefont.woff) format('woff'),
+//         url(/path/to/fonts/examplefont.eot) format('eot');
+//     font-weight: 400;
+//     font-style: normal;
+//     font-display: fallback;
+// }
+html,body,td,th,input,button,select{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+@each $vw in (
+    576px 1.2,
+    768px 1.3,
+    991px 1.4
+){
+    @media screen and (min-width: #{nth($vw,1)}){
+        html,body,td,th,input,button,select{
+            font-size: 10px*nth($vw,2);
+        }
+    }
+}
+
+@each $vw in (
+    576px 1.4,
+    768px 1.6,
+    991px 1.8
+){
+    @media screen and (min-width: #{nth($vw,1)}){
+        .font-title{
+            font-size: 10px*nth($vw,2);
+            font-weight: bold;
+        }
+    }
+}
+.font-bold{
+    font-weight: 600;
+}
+.font-bolder{
+    font-weight: 800;
+}
+.form-control,
+.btn{
+    font-size: 1em;
+}
+
+h1,.h1{
+    font-size: 2.5em;
+}
+h2,.h2{
+    font-size: 2em;
+}
+
+.post{
+    &_title,
+    &_info{
+        font-family: 'Roboto', sans-serif;
+    }
+}

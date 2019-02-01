@@ -1,0 +1,37 @@
+$primary-color: #009688;
+
+
+$dark: #020000;
+$dark-grey: #303030;
+
+$white: #fff;
+
+$blue: #3f51b5;
+$red: #e91e63;
+// END TEST COLORS
+
+
+
+// TEXTs
+$text-colors: () !default;
+$text-colors: map-merge((
+    "text-green": $primary-color
+), $text-colors);
+
+@each $name,$color in $text-colors{
+    .#{$name}{
+        color: $color;
+    }
+}
+
+// BACKGROUND COLORS
+$bg-colors: () !default;
+$bg-colors: map-merge((
+    "bg-dark": $dark-grey
+), $bg-colors);
+
+@each $name,$color in $bg-colors{
+    .#{$name}{
+        color: $color !important;
+    }
+}

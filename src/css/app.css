@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+html, body, td, th, input, button, select {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 10px; }
+
+@media screen and (min-width: 576px) {
+  html, body, td, th, input, button, select {
+    font-size: 12px; } }
+@media screen and (min-width: 768px) {
+  html, body, td, th, input, button, select {
+    font-size: 13px; } }
+@media screen and (min-width: 991px) {
+  html, body, td, th, input, button, select {
+    font-size: 14px; } }
+.font-bold {
+  font-weight: 600; }
+
+.font-bolder {
+  font-weight: 800; }
+
+.form-control,
+.btn {
+  font-size: 1em; }
+
+h1, .h1 {
+  font-size: 2.5em; }
+
+h2, .h2 {
+  font-size: 2em; }
+
+.text-green {
+  color: seagreen; }
+
+/*# sourceMappingURL=app.css.map */

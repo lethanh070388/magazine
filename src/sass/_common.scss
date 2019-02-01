@@ -1,0 +1,8 @@
+.form-control,
+.btn{
+    @include border-radius(0);
+}
+
+.border-none{
+    border: 0 !important;
+}
