@@ -1,3 +1,18 @@
+nav.pushy.pushy-left
+    .close-menu
+        img(src="../assets/close-x-small-white.png", alt="")
+    .logo.text-uppercase Bloggia
+    h1.text-uppercase.text-white.font-bolder.pl-4.mt-4 Tra cứu
+    hr.hr-white
+    ul.pushy_menu
+        li
+            a(href="#") Định mức
+        li
+            a(href="#") Đơn giá
+        li
+            a(href="#") Công bố giá địa phương
+        li
+            a(href="#") Văn bản mẫu
 header.header-nav
     .container
         .row.m-0
@@ -35,15 +50,8 @@ header.header-nav
                     a.nav-link(href="./index.html")
                         |Trang chủ
                         span.sr-only (current)
-                
-                li.nav-item.dropdown
-                    a.nav-link.dropdown-toggle(href="#" id="navbarDropdownNews" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Tra cứu
-                    .dropdown-menu(aria-labelledby="navbarDropdownNews")
-                        a.dropdown-item(href="#") Văn bản luật
-                        a.dropdown-item(href="#") Định mức
-                        a.dropdown-item(href="#") Đơn giá
-                        a.dropdown-item(href="#") Giá VLXD
-                        a.dropdown-item(href="#") Văn bản mẫu
+                li.nav-item
+                    a#search-nav.nav-link(href="#") Tra cứu
                 li.nav-item
                     a.nav-link(href="#") Văn bản luật
                 li.nav-item

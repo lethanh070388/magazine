@@ -48,4 +48,14 @@ $(function(){
         $('.expand-icon-close').toggle();
         $('.expand-icon-open').toggle();
     });
+
+    $('#search-nav').click(function(){
+        $('.pushy').css("transform","translateX(0)");
+        $('body').addClass("pushy-open-left");
+    });
+
+    $('.close-menu').click(function(){
+        $('.pushy').css("transform","translateX(-340px)");
+        $('body').removeClass("pushy-open-left");
+    });
 });

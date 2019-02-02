@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Lalezar&subset=vietnamese');
 // @font-face {
 //     font-family: ExampleFont;
 //     src: url(/path/to/fonts/examplefont.woff) format('woff'),
@@ -61,5 +62,8 @@ h2,.h2{
     &_title,
     &_info{
         font-family: 'Roboto', sans-serif;
+    }
+    &_thumbnail{
+        font-family: 'Lalezar', cursive;;
     }
 }

@@ -1,0 +1,25 @@
+extends ../layouts/layout_homepage.pug
+include ../mixins/_tab.pug
+block append main-content
+    .container.search-wrapper.mt-5
+        nav(aria-label="breadcrumb")
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href="./index.html") Trang chủ
+                li.breadcrumb-item
+                    a(href="./index.html") Văn bản luật
+                li.breadcrumb-item.active(aria-current="page") Văn bản
+    .container.mt-5
+        .row
+            .col-lg-8
+                +tabs([{id: 'tab1',name: 'Thuộc tính'},{id: 'tab2',name: 'Nội dung'},{id: 'tab3',name: 'Văn bản gốc'},{id: 'tab4',name: 'Lược đồ'},{id: 'tab5',name: 'Liên quan hiệu lực'},{id: 'tab6',name: 'Liên quan nộ dung'},{id: 'tab7',name: 'Tải về'}])         
+                    +tab-item('tab1','true')
+                        .row
+                            .col
+                                | Thuộc tính
+                    +tab-item('tab2')
+                        .row
+                            .col Nội dung
+                    +tab-item('tab3')
+                        .row
+                            .col Tab 3

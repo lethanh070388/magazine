@@ -11,11 +11,24 @@ $red: #e91e63;
 // END TEST COLORS
 
 
+// THUMBNAILS
+$tb-black: #1E1E1E;
+$tb-red: #DD4118;
+$tb-green: #688B27;
+$tb-brown: #CD7F13;
+$tb-cyan: #00645A;
+$tb-purple: #9911B1;
+$tb-grey: #EAF0F0;
+$tb-blue: #1D3B91;
+$thumbnail-radius: 100px;
+// END THUMBNAILS
+
 
 // TEXTs
 $text-colors: () !default;
 $text-colors: map-merge((
-    "text-green": $primary-color
+    "text-green": $primary-color,
+    "text-white": $white
 ), $text-colors);
 
 @each $name,$color in $text-colors{

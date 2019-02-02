@@ -11,6 +11,18 @@ mixin tabs(list=[{id:"A", name:"Tab A"},{id:"B", name:"Tab B"}],heading='')
     .tab-content.py-1.py-sm-3
         if block
             block
+mixin article-tabs(list=[{id:"A", name:"Tab A"},{id:"B", name:"Tab B"}])
+    ul.nav.nav-tabs.tabs.article-detail(role="tablist")
+        each val,index in list
+            if index == 0
+                li.nav-item
+                    a.active(data-toggle="tab" href="#tab"+(val.id))= val.name
+            else
+                li.nav-item
+                    a(data-toggle="tab" href="#tab"+(val.id))= val.name
+    .tab-content.py-1.py-sm-3
+        if block
+            block
 mixin tab-item(id='A',active='false')
     if active == 'true'
         .container.tab-pane.active.p-0(id="tab"+(id))
