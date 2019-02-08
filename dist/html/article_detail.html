@@ -10,197 +10,205 @@
     <link href="../css/app.css" rel="stylesheet"/>
   </head>
   <body>
-    <div class="site-overlay"></div>
-    <nav class="pushy pushy-left">
-      <div class="close-menu"><img src="../assets/close-x-small-white.png" alt=""/></div>
-      <div class="logo text-uppercase">Bloggia</div>
-      <h1 class="text-uppercase text-white font-bolder pl-4 mt-4">Tra cứu</h1>
-      <hr class="hr-white"/>
-      <ul class="pushy_menu">
-        <li><a href="./searchByRate.html">Định mức</a></li>
-        <li><a href="./searchByPrice.html">Đơn giá</a></li>
-        <li><a href="./searchByLocalPrice.html">Công bố giá địa phương</a></li>
-        <li><a href="./searchBySampleText.html">Văn bản mẫu</a></li>
-      </ul>
-    </nav>
-    <header class="header-nav">
-      <div class="container">
-        <div class="row m-0">
-          <div class="socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href=""><i class="fas fa-envelope"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-youtube"></i></a><a href=""><i class="fab fa-instagram"></i></a></div>
-          <div class="user-section ml-auto"><a href="#" data-toggle="modal" data-target="#modalLogin">Đăng nhập</a><a href="./register.html">Đăng ký</a></div>
-        </div>
-      </div>
-    </header>
-    <div class="header-banner">
-      <div class="container py-4">
-        <div class="row m-0 justify-content-center justify-content-lg-between flex-lg-nowrap">
-          <div class="logo"><a href="./index.html"><img src="../assets/logo-header.png" alt=""/></a></div>
-          <div class="ads-header"><a href="#"><img src="../assets/ads-header.jpg" alt=""/></a></div>
-        </div>
-      </div>
-    </div>
-    <div class="navbar navbar-expand-md navbar-dark bg-dark bg-nav-scroll custom-nav">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="./index.html">Trang chủ<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" id="search-nav" href="#">Tra cứu</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Văn bản luật</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Định mức</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Đơn giá</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Giá VLXD</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Văn bản mẫu</a></li>
+    <div class="main-wrapper">
+      <div class="main-header">
+        <div class="site-overlay"></div>
+        <nav class="pushy pushy-left">
+          <div class="close-menu"><img src="../assets/close-x-small-white.png" alt=""/></div>
+          <div class="logo text-uppercase">Bloggia</div>
+          <h1 class="text-uppercase text-white font-bolder pl-4 mt-4">Tra cứu</h1>
+          <hr class="hr-white"/>
+          <ul class="pushy_menu">
+            <li><a href="./searchByRate.html">Định mức</a></li>
+            <li><a href="./searchByPrice.html">Đơn giá</a></li>
+            <li><a href="./searchByLocalPrice.html">Công bố giá địa phương</a></li>
+            <li><a href="./searchBySampleText.html">Văn bản mẫu</a></li>
           </ul>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title w-100 text-center text-green font-bold" id="modalLoginLabel">Đăng nhập</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </nav>
+        <header class="header-nav">
+          <div class="container">
+            <div class="row m-0">
+              <div class="socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href=""><i class="fas fa-envelope"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-youtube"></i></a><a href=""><i class="fab fa-instagram"></i></a></div>
+              <div class="user-section ml-auto"><a href="#" data-toggle="modal" data-target="#modalLogin">Đăng nhập</a><a href="./register.html">Đăng ký</a></div>
+            </div>
           </div>
-          <div class="modal-body">
-            <form class="form-group needs-validation pt-4" action="#" novalidate="novalidate">
-              <div class="form-group">
-                <input class="form-control" type="text" aria-describedby="username" placeholder="Tên đăng nhập hoặc email" required="required"/>
-                <div class="invalid-feedback">Sai tên đăng nhập hoặc email</div>
-              </div>
-              <div class="form-group">
-                <input class="form-control" type="text" aria-describedby="password" placeholder="Nhập password" required="required"/>
-                <div class="invalid-feedback">Sai password</div>
-              </div>
-              <div class="form-group text-right">
-                <button class="btn btn-outline-primary" type="submit">Đăng nhập</button>
-              </div>
-              <div class="form-group text-right"><a class="text-blue nowrap" href="./register.html">Đăng ký | </a><a class="text-blue nowrap" href="./forget_password.html">Quên mật khẩu?</a></div>
-            </form>
+        </header>
+        <div class="header-banner">
+          <div class="container py-4">
+            <div class="row m-0 justify-content-center justify-content-lg-between flex-lg-nowrap">
+              <div class="logo"><a href="./index.html"><img src="../assets/logo-header.png" alt=""/></a></div>
+              <div class="ads-header"><a href="#"><img src="../assets/ads-header.jpg" alt=""/></a></div>
+            </div>
           </div>
         </div>
+        <div class="navbar navbar-expand-md navbar-dark bg-dark bg-nav-scroll custom-nav">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="./index.html">Trang chủ<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" id="search-nav" href="#">Tra cứu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Văn bản luật</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Định mức</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Đơn giá</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Giá VLXD</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Văn bản mẫu</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title w-100 text-center text-green font-bold" id="modalLoginLabel">Đăng nhập</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <form class="form-group needs-validation pt-4" action="#" novalidate="novalidate">
+                  <div class="form-group">
+                    <input class="form-control" type="text" aria-describedby="username" placeholder="Tên đăng nhập hoặc email" required="required"/>
+                    <div class="invalid-feedback">Sai tên đăng nhập hoặc email</div>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="text" aria-describedby="password" placeholder="Nhập password" required="required"/>
+                    <div class="invalid-feedback">Sai password</div>
+                  </div>
+                  <div class="form-group text-right">
+                    <button class="btn btn-outline-primary" type="submit">Đăng nhập</button>
+                  </div>
+                  <div class="form-group text-right"><a class="text-blue nowrap" href="./register.html">Đăng ký | </a><a class="text-blue nowrap" href="./forget_password.html">Quên mật khẩu?</a></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-9">
-          <ul class="nav nav-tabs tabs article-detail" role="tablist">
-            <li class="nav-item"><a class="active" data-toggle="tab" href="#tabtab1">Thuộc tính</a></li>
-            <li class="nav-item"><a data-toggle="tab" href="#tabtab2">Nội dung</a></li>
-            <li class="nav-item"><a data-toggle="tab" href="#tabtab3">Văn bản gốc</a></li>
-            <li class="nav-item"><a data-toggle="tab" href="#tabtab4">Lược đồ</a></li>
-            <li class="nav-item"><a data-toggle="tab" href="#tabtab5">Liên quan hiệu lực</a></li>
-            <li class="nav-item"><a data-toggle="tab" href="#tabtab6">Liên quan nội dung</a></li>
-            <li class="nav-item"><a data-toggle="tab" href="#tabtab7">Tải về</a></li>
-          </ul>
-          <div class="tab-content py-1 py-sm-3">        
-            <div class="container tab-pane active p-0" id="tabtab1">
-              <div class="row no-gutters">
-                <div class="col">
-                  <div class="row">
-                    <div class="col content-wrapper">
-                      <p>Chỉ thị 03/CT-TTg năm 2019 thực hiện Nghị quyết 582/NQ-UBTVQH14 về nhiệm vụ giải pháp tiếp tục đẩy mạnh thực hiện chính sách, pháp luật về quản lý và sử dụng nguồn vốn vay nước ngoài do Thủ tướng Chính phủ ban hành</p>
-                      <div class="row no-gutter">
-                        <div class="col-sm-6">
-                          <table class="table table-bordered">
-                            <tbody>
-                              <tr>
-                                <td class="name">Số hiệu</td>
-                                <td class="data">03/CT-TTg</td>
-                              </tr>
-                              <tr>
-                                <td class="name">Nơi ban hành</td>
-                                <td class="data">Thủ tướng Chính phủ</td>
-                              </tr>
-                              <tr>
-                                <td class="name">Ngày ban hành</td>
-                                <td class="data">30/01/2019</td>
-                              </tr>
-                              <tr>
-                                <td class="name">Ngày công báo</td>
-                                <td class="data">Đang cập nhật</td>
-                              </tr>
-                            </tbody>
-                          </table>
+      <div class="main-content">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-9">
+              <ul class="nav nav-tabs tabs article-detail" role="tablist">
+                <li class="nav-item"><a class="active" data-toggle="tab" href="#tabtab1">Thuộc tính</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="#tabtab2">Nội dung</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="#tabtab3">Văn bản gốc</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="#tabtab4">Lược đồ</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="#tabtab5">Liên quan hiệu lực</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="#tabtab6">Liên quan nội dung</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="#tabtab7">Tải về</a></li>
+              </ul>
+              <div class="tab-content py-1 py-sm-3">        
+                <div class="container tab-pane active p-0" id="tabtab1">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col content-wrapper">
+                          <p>Chỉ thị 03/CT-TTg năm 2019 thực hiện Nghị quyết 582/NQ-UBTVQH14 về nhiệm vụ giải pháp tiếp tục đẩy mạnh thực hiện chính sách, pháp luật về quản lý và sử dụng nguồn vốn vay nước ngoài do Thủ tướng Chính phủ ban hành</p>
+                          <div class="row no-gutter">
+                            <div class="col-sm-6">
+                              <table class="table table-bordered">
+                                <tbody>
+                                  <tr>
+                                    <td class="name">Số hiệu</td>
+                                    <td class="data">03/CT-TTg</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="name">Nơi ban hành</td>
+                                    <td class="data">Thủ tướng Chính phủ</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="name">Ngày ban hành</td>
+                                    <td class="data">30/01/2019</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="name">Ngày công báo</td>
+                                    <td class="data">Đang cập nhật</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="col-sm-6">
+                              <table class="table table-bordered">
+                                <tbody>
+                                  <tr>
+                                    <td class="name">Loại văn bản</td>
+                                    <td class="data">Chỉ thị</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="name">Người ký</td>
+                                    <td class="data">Nguyễn Xuân Phúc</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="name">Ngày hiệu lực</td>
+                                    <td class="data">30/01/2019</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="name">Số công báo</td>
+                                    <td class="data">Đang cập nhật</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="name">Tình trạng</td>
+                                    <td class="data text-red">Còn hiệu lực</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-sm-6">
-                          <table class="table table-bordered">
-                            <tbody>
-                              <tr>
-                                <td class="name">Loại văn bản</td>
-                                <td class="data">Chỉ thị</td>
-                              </tr>
-                              <tr>
-                                <td class="name">Người ký</td>
-                                <td class="data">Nguyễn Xuân Phúc</td>
-                              </tr>
-                              <tr>
-                                <td class="name">Ngày hiệu lực</td>
-                                <td class="data">30/01/2019</td>
-                              </tr>
-                              <tr>
-                                <td class="name">Số công báo</td>
-                                <td class="data">Đang cập nhật</td>
-                              </tr>
-                              <tr>
-                                <td class="name">Tình trạng</td>
-                                <td class="data text-red">Còn hiệu lực</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container tab-pane p-0" id="tabtab2">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col">Nội dung</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container tab-pane p-0" id="tabtab3">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col">Tab 3</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="container tab-pane p-0" id="tabtab2">
-              <div class="row no-gutters">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">Nội dung</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container tab-pane p-0" id="tabtab3">
-              <div class="row no-gutters">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">Tab 3</div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg-3">
+              <div class="ads-side"><img class="w-100" src="../assets/ads-side.jpg" alt=""/></div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="ads-side"><img class="w-100" src="../assets/ads-side.jpg" alt=""/></div>
-        </div>
       </div>
-    </div>
-    <div class="footer mt-5">
-      <div class="container py-5">
-        <div class="row mb-4">
-          <div class="col footer_logo"><img src="../assets/logo-footer.png" alt=""/></div>
-        </div>
-        <div class="row d-flex justify-content-center mb-4">
-          <div class="col-sm-10 col-md-8 text-center">
-            <p>Newspaper is your news, entertainment, music fashion website. We provide you with the latest breaking news and videos straight from the entertainment industry.</p>
-            <p>
-               Contact us: <a href="mailto:ourmail@gmail.com">ourmail@gmail.com</a></p>
+      <div class="main-footer">
+        <div class="footer mt-5">
+          <div class="container py-5">
+            <div class="row mb-4">
+              <div class="col footer_logo"><img src="../assets/logo-footer.png" alt=""/></div>
+            </div>
+            <div class="row d-flex justify-content-center mb-4">
+              <div class="col-sm-10 col-md-8 text-center">
+                <p>Newspaper is your news, entertainment, music fashion website. We provide you with the latest breaking news and videos straight from the entertainment industry.</p>
+                <p>
+                   Contact us: <a href="mailto:ourmail@gmail.com">ourmail@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href=""><i class="fas fa-envelope"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-youtube"></i></a><a href=""><i class="fab fa-instagram"></i></a></div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href=""><i class="fas fa-envelope"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-youtube"></i></a><a href=""><i class="fab fa-instagram"></i></a></div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copy-right">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">&copy; baogia.vn</div>
+        <div class="footer-copy-right">
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">&copy; baogia.vn</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

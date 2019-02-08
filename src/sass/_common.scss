@@ -1,3 +1,6 @@
+html,body{
+    height: 100%;
+}
 .form-control,
 .btn{
     @include border-radius(0);
@@ -16,4 +19,13 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #ccc;
+}
+
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    .main-content{
+        flex-grow: 1;
+    }
 }

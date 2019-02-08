@@ -28,12 +28,17 @@ block append main-content
                                         option(value="13") Viễn thông
                                         option(value="14") Xăng dầu
                                         option(value="15") Khác
-                                    input#iptFromYear.form-control.datepicker.border-left-none.text-center(type="text" placeholder="Từ năm")
-                                    input#iptToYear.form-control.datepicker.border-left-none.text-center(type="text" placeholder="Đến năm")
+                                    input#iptFromYear.form-control.datepicker.border-left-none.text-center.date-control(type="text" placeholder="Từ năm")
+                                    input#iptToYear.form-control.datepicker.border-left-none.text-center.date-control(type="text" placeholder="Đến năm")
                                 input.form-control.br-none.search-box(type="text" placeholder="Nhập nội dung văn bản cần tìm..." aria-label="Enter finding text" aria-describedby="button-addon2")
                                 .input-group-append
                                     button.btn.btn-white.btn-search(type="button" id="button-addon2")
                                         i.fas.fa-search
+    .container.search-notify.mt-4
+        .row
+            .col
+                .alert.alert-info Có 11.050 kết quả được tìm thấy
+                .alert.alert-danger Không có kết quả nào được tìm thấy
     .container.search-wrapper.mt-5
         .row
             .col-md-8.posts-group

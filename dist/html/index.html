@@ -10,624 +10,632 @@
     <link href="../css/app.css" rel="stylesheet"/>
   </head>
   <body>
-    <div class="site-overlay"></div>
-    <nav class="pushy pushy-left">
-      <div class="close-menu"><img src="../assets/close-x-small-white.png" alt=""/></div>
-      <div class="logo text-uppercase">Bloggia</div>
-      <h1 class="text-uppercase text-white font-bolder pl-4 mt-4">Tra cứu</h1>
-      <hr class="hr-white"/>
-      <ul class="pushy_menu">
-        <li><a href="./searchByRate.html">Định mức</a></li>
-        <li><a href="./searchByPrice.html">Đơn giá</a></li>
-        <li><a href="./searchByLocalPrice.html">Công bố giá địa phương</a></li>
-        <li><a href="./searchBySampleText.html">Văn bản mẫu</a></li>
-      </ul>
-    </nav>
-    <header class="header-nav">
-      <div class="container">
-        <div class="row m-0">
-          <div class="socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href=""><i class="fas fa-envelope"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-youtube"></i></a><a href=""><i class="fab fa-instagram"></i></a></div>
-          <div class="user-section ml-auto"><a href="#" data-toggle="modal" data-target="#modalLogin">Đăng nhập</a><a href="./register.html">Đăng ký</a></div>
-        </div>
-      </div>
-    </header>
-    <div class="header-banner">
-      <div class="container py-4">
-        <div class="row m-0 justify-content-center justify-content-lg-between flex-lg-nowrap">
-          <div class="logo"><a href="./index.html"><img src="../assets/logo-header.png" alt=""/></a></div>
-          <div class="ads-header"><a href="#"><img src="../assets/ads-header.jpg" alt=""/></a></div>
-        </div>
-      </div>
-    </div>
-    <div class="navbar navbar-expand-md navbar-dark bg-dark bg-nav-scroll custom-nav">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="./index.html">Trang chủ<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" id="search-nav" href="#">Tra cứu</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Văn bản luật</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Định mức</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Đơn giá</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Giá VLXD</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Văn bản mẫu</a></li>
+    <div class="main-wrapper">
+      <div class="main-header">
+        <div class="site-overlay"></div>
+        <nav class="pushy pushy-left">
+          <div class="close-menu"><img src="../assets/close-x-small-white.png" alt=""/></div>
+          <div class="logo text-uppercase">Bloggia</div>
+          <h1 class="text-uppercase text-white font-bolder pl-4 mt-4">Tra cứu</h1>
+          <hr class="hr-white"/>
+          <ul class="pushy_menu">
+            <li><a href="./searchByRate.html">Định mức</a></li>
+            <li><a href="./searchByPrice.html">Đơn giá</a></li>
+            <li><a href="./searchByLocalPrice.html">Công bố giá địa phương</a></li>
+            <li><a href="./searchBySampleText.html">Văn bản mẫu</a></li>
           </ul>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title w-100 text-center text-green font-bold" id="modalLoginLabel">Đăng nhập</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </nav>
+        <header class="header-nav">
+          <div class="container">
+            <div class="row m-0">
+              <div class="socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href=""><i class="fas fa-envelope"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-youtube"></i></a><a href=""><i class="fab fa-instagram"></i></a></div>
+              <div class="user-section ml-auto"><a href="#" data-toggle="modal" data-target="#modalLogin">Đăng nhập</a><a href="./register.html">Đăng ký</a></div>
+            </div>
           </div>
-          <div class="modal-body">
-            <form class="form-group needs-validation pt-4" action="#" novalidate="novalidate">
-              <div class="form-group">
-                <input class="form-control" type="text" aria-describedby="username" placeholder="Tên đăng nhập hoặc email" required="required"/>
-                <div class="invalid-feedback">Sai tên đăng nhập hoặc email</div>
-              </div>
-              <div class="form-group">
-                <input class="form-control" type="text" aria-describedby="password" placeholder="Nhập password" required="required"/>
-                <div class="invalid-feedback">Sai password</div>
-              </div>
-              <div class="form-group text-right">
-                <button class="btn btn-outline-primary" type="submit">Đăng nhập</button>
-              </div>
-              <div class="form-group text-right"><a class="text-blue nowrap" href="./register.html">Đăng ký | </a><a class="text-blue nowrap" href="./forget_password.html">Quên mật khẩu?</a></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container search-wrapper mt-5">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="posts-group">
-            <div class="group_heading red-line font-title mb-3">Tra cứu</div>
-            <div class="group_content">
-              <div class="search_option">
-                <h6 class="text-uppercase">Tìm văn bản pháp luật Việt Nam</h6>
-                <div class="input-group mb-3">
-                  <input class="form-control br-none" type="text" placeholder="Nhập nội dung văn bản cần tìm..." aria-label="Enter finding text" aria-describedby="button-addon2"/>
-                  <div class="input-group-append">
-                    <button class="btn btn-white" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
-                  </div>
-                </div>
-                <div class="search_advanced">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance1" value="optionAll"/>
-                    <label class="form-check-label" for="rdoSearchAdvance1">Tất cả</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance2" value="optionTitle"/>
-                    <label class="form-check-label" for="rdoSearchAdvance2">Tiêu đề</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance3" value="optionNumber"/>
-                    <label class="form-check-label" for="rdoSearchAdvance3">Số hiệu văn bản</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="checkFindByWords" id="chkFindByWords" value="optionFindByWord"/>
-                    <label class="form-check-label" for="chkFindByWords">Chính xác cụm từ</label>
-                  </div>
-                  <div class="form-check form-check-inline ml-auto">
-                    <div class="text-green font-bold advance-toggle"><span>Nâng cao</span><i class="pl-1 fas fa-angle-down align-middle"></i></div>
-                  </div>
-                </div>
-                <div class="form-row mt-3 advance-content">
-                  <div class="form-group col-sm-6 col-md-3">
-                    <input class="form-control border-none datepicker" id="iptFrom" type="text" placeholder="Từ ngày (Ng/Thg/Năm)"/>
-                  </div>
-                  <div class="form-group col-sm-6 col-md-3">
-                    <input class="form-control border-none datepicker" id="iptFrom" type="text" placeholder="Đến ngày (Ng/Thg/Năm)"/>
-                  </div>
-                  <div class="form-group col-sm-6 col-md-3">
-                    <select class="form-control border-none" id="ddlType">
-                      <option selected="selected" disabled="disabled">Loại văn bản</option>
-                      <option value="1">Bản ghi nhớ</option>
-                      <option value="2">Báo cáo</option>
-                      <option value="3">Biên bản</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-sm-6 col-md-3">
-                    <select class="form-control border-none" id="ddlWhere">
-                      <option selected="selected" disabled="disabled">Cơ quan ban hành</option>
-                      <option value="1">Ban Bí Thư</option>
-                      <option value="2">Ban Cán sự Đảng</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-sm-6 col-md-3">
-                    <select class="form-control border-none" id="ddlStatus">
-                      <option selected="selected" disabled="disabled">Tình trạng hiệu lực</option>
-                      <option value="1">Còn hiệu lực</option>
-                      <option value="2">Không còn hiệu lực</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-sm-6 col-md-3">
-                    <select class="form-control border-none" id="ddlField">
-                      <option selected="selected" disabled="disabled">Lĩnh vực hoạt động</option>
-                      <option value="1">An ninh trật tự</option>
-                      <option value="2">An ninh Quốc gia</option>
-                      <option value="3">Bảo hiểm</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-sm-6 col-md-3">
-                    <select class="form-control border-none" id="ddlLang">
-                      <option selected="selected" disabled="disabled">Ngôn ngữ</option>
-                      <option value="1">Tiếng việt</option>
-                      <option value="2">English</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-sm-6 col-md-3">
-                    <input class="form-control border-none" id="iptSigner" type="text" placeholder="Người ký..."/>
-                  </div>
-                </div>
-              </div>
+        </header>
+        <div class="header-banner">
+          <div class="container py-4">
+            <div class="row m-0 justify-content-center justify-content-lg-between flex-lg-nowrap">
+              <div class="logo"><a href="./index.html"><img src="../assets/logo-header.png" alt=""/></a></div>
+              <div class="ads-header"><a href="#"><img src="../assets/ads-header.jpg" alt=""/></a></div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="ads-side"><img class="w-100" src="../assets/ads-side.jpg" alt=""/></div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-5">
-      <div class="banner">
-        <div class="news main-news"><img src="../assets/img/15-534x462.jpg" alt=""/>
-          <div class="news_content"><a class="news_label" href="#">Photography</a>
-            <h3 class="news_title"><a href="./article_detail.html">Celebrity make-up artist Gary Cockerill shows you beauty trick</a></h3>
-            <div class="d-flex news_info"><span class="news_author">David Lee</span><span class="px-1">-</span><span class="news_time">September 24, 2015</span></div>
-          </div>
-        </div>
-        <div class="grid-news">
-          <div class="news"><img src="../assets/img/9-265x198.jpg" alt=""/>
-            <div class="news_content"><a class="news_label" href="#">Fashion</a>
-              <h6 class="news_title"><a href="#">Fashion Week Parties: Night 4</a></h6>
-            </div>
-          </div>
-          <div class="news"><img src="../assets/img/18-265x198.jpg" alt=""/>
-            <div class="news_content"><a class="news_label" href="#">TECH</a>
-              <h6 class="news_title"><a href="#">Gigabyte GeForce GTX 950 Review: Pricing Is Everything</a></h6>
-            </div>
-          </div>
-          <div class="news"><img src="../assets/img/54-265x198.jpg" alt=""/>
-            <div class="news_content"><a class="news_label" href="#">ART</a>
-              <h6 class="news_title"><a href="#">A Thomas Hart Benton Mural, Repurposed as a Writing Desk</a></h6>
-            </div>
-          </div>
-          <div class="news"><img src="../assets/img/61-265x198.jpg" alt=""/>
-            <div class="news_content"><a class="news_label" href="#">HEALTH</a>
-              <h6 class="news_title"><a href="#">The Workout That Burns More Calories Than Running</a></h6>
+        <div class="navbar navbar-expand-md navbar-dark bg-dark bg-nav-scroll custom-nav">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="./index.html">Trang chủ<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" id="search-nav" href="#">Tra cứu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Văn bản luật</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Định mức</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Đơn giá</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Giá VLXD</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Văn bản mẫu</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-8">
-          <ul class="nav nav-tabs tabs" role="tablist">
-            <div class="tabs_heading font-title">Tin tức</div>
-            <li class="nav-item"><a class="active" data-toggle="tab" href="#tabtab1">Văn bản luật</a></li>
-            <li class="nav-item"><a data-toggle="tab" href="#tabtab2">Định mức</a></li>
-            <li class="nav-item"><a data-toggle="tab" href="#tabtab3">Đơn giá</a></li>
-          </ul>
-          <div class="tab-content py-1 py-sm-3">        
-            <div class="container tab-pane active p-0" id="tabtab1">
-              <div class="row no-gutters">
-                <div class="col">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="post post-wrapper">
-                        <div class="post_img"><img src="../assets/img/1-324x235.jpg" alt=""/>
-                          <div class="post_label absolute">Văn bản luật</div>
-                        </div>
-                        <div class="post_body">
-                          <h5 class="post_title"><a href="#" title="Georgian soldier helped in attack near US base in Afghanistan">Georgian soldier helped in attack near US base in Afghanistan</a></h5>
-                          <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
-                          <div class="post_content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ex explicabo quos amet maxime aut voluptates rerum deleniti? Debitis doloremque excepturi quia sit. Corrupti blanditiis necessitatibus, odio nam sequi eveniet...</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 list-wrapper">
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/3-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/4-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/5-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Things to Look For in a Financial Trading Platform">Things to Look For in a Financial Trading Platform</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/6-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Kansas City has a massive network of underground caves">Kansas City has a massive network of underground caves</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/2-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Kansas City has a massive network of underground caves">Kansas City has a massive network of underground caves</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="text-right"><a class="btn btn-outline-red" href="#">Xem thêm</a></div>
-                    </div>
-                  </div>
-                </div>
+        <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title w-100 text-center text-green font-bold" id="modalLoginLabel">Đăng nhập</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
-            </div>
-            <div class="container tab-pane p-0" id="tabtab2">
-              <div class="row no-gutters">
-                <div class="col">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="post post-wrapper">
-                        <div class="post_img"><img src="../assets/img/15-324x235.jpg" alt=""/>
-                          <div class="post_label absolute">Định mức</div>
-                        </div>
-                        <div class="post_body">
-                          <h5 class="post_title"><a href="#" title="Celebrity make-up artist Gary Cockerill shows you beauty trick">Celebrity make-up artist Gary Cockerill shows you beauty trick</a></h5>
-                          <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
-                          <div class="post_content">
-                            <p>All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 list-wrapper">
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/16-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/14-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/13-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Things to Look For in a Financial Trading Platform">Things to Look For in a Financial Trading Platform</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/12-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Kansas City has a massive network of underground caves">Kansas City has a massive network of underground caves</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                    </div>
+              <div class="modal-body">
+                <form class="form-group needs-validation pt-4" action="#" novalidate="novalidate">
+                  <div class="form-group">
+                    <input class="form-control" type="text" aria-describedby="username" placeholder="Tên đăng nhập hoặc email" required="required"/>
+                    <div class="invalid-feedback">Sai tên đăng nhập hoặc email</div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="container tab-pane p-0" id="tabtab3">
-              <div class="row no-gutters">
-                <div class="col">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="post post-wrapper">
-                        <div class="post_img"><img src="../assets/img/1-324x235.jpg" alt=""/>
-                          <div class="post_label absolute">Đơn giá</div>
-                        </div>
-                        <div class="post_body">
-                          <h5 class="post_title"><a href="#" title="Georgian soldier helped in attack near US base in Afghanistan">Georgian soldier helped in attack near US base in Afghanistan</a></h5>
-                          <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
-                          <div class="post_content">
-                            <p>All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 list-wrapper">
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/3-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/4-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/5-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Things to Look For in a Financial Trading Platform">Things to Look For in a Financial Trading Platform</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/6-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Kansas City has a massive network of underground caves">Kansas City has a massive network of underground caves</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/2-100x70.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Kansas City has a massive network of underground caves">Kansas City has a massive network of underground caves</a></h6>
-                          <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="form-group">
+                    <input class="form-control" type="text" aria-describedby="password" placeholder="Nhập password" required="required"/>
+                    <div class="invalid-feedback">Sai password</div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <ul class="nav nav-tabs tabs" role="tablist">
-            <div class="tabs_heading font-title">Xem nhiều</div>
-            <li class="nav-item"><a class="active" data-toggle="tab" href="#tabtabR1">Tất cả</a></li>
-            <li class="nav-item"><a data-toggle="tab" href="#tabtabR2">Khác</a></li>
-          </ul>
-          <div class="tab-content py-1 py-sm-3">        
-            <div class="container tab-pane active p-0" id="tabtabR1">
-              <div class="row no-gutters">
-                <div class="col">
-                  <div class="row">
-                    <div class="col-lg-12 col-md-6 list-wrapper">
-                      <div class="post post-wrapper list-item">
-                        <div class="post_thumbnail tb-green">NĐ                                        </div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Nghị định 09/2019/NĐ-CP quy định về chế độ báo cáo của cơ quan hành chính nhà nước">Nghị định 09/2019/NĐ-CP quy định về chế độ báo cáo của cơ quan hành chính nhà nước</a></h6>
-                          <div class="post_info">
-                            <div class="post_label">Văn bản luật</div>
-                            <div class="post_time pt-1">31/01/2019</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_thumbnail tb-cyan">QĐ  </div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Quyết định 05/2019/QĐ-TTg bãi bỏ văn bản quy phạm pháp luật do Thủ tướng Chính phủ ban hành">Quyết định 05/2019/QĐ-TTg bãi bỏ văn bản quy phạm pháp luật do Thủ tướng Chính phủ ban hành</a></h6>
-                          <div class="post_info">
-                            <div class="post_label">Văn bản luật</div>
-                            <div class="post_time pt-1">31/01/2019</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-12 col-md-6 list-wrapper">
-                      <div class="post post-wrapper list-item">
-                        <div class="post_thumbnail tb-red">TT  </div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Thông tư 30/2018/TT-BGDĐT về Quy chế quản lý người nước ngoài học tập tại Việt Nam do Bộ trưởng Bộ Giáo dục và Đào tạo ban hành">Thông tư 30/2018/TT-BGDĐT về Quy chế quản lý người nước ngoài học tập tại Việt Nam ...</a></h6>
-                          <div class="post_info">
-                            <div class="post_label">Văn bản luật</div>
-                            <div class="post_time pt-1">31/01/2019</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_thumbnail tb-brown">CT  </div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="Chỉ thị 01/CT-BXD năm 2019 về tổ chức Tết và tăng cường biện pháp bảo đảm đón Tết Nguyên đán Kỷ Hợi 2019 vui tươi, lành mạnh, an toàn, tiết kiệm do Bộ Xây dựng ban hành">Chỉ thị 01/CT-BXD năm 2019 về tổ chức Tết và tăng cường biện pháp bảo đảm đón Tết Nguyên đán ...</a></h6>
-                          <div class="post_info">
-                            <div class="post_label">Văn bản luật</div>
-                            <div class="post_time pt-1">31/01/2019</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="form-group text-right">
+                    <button class="btn btn-outline-primary" type="submit">Đăng nhập</button>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="container tab-pane p-0" id="tabtabR2">
-              <div class="row no-gutters">
-                <div class="col">
-                  <div class="row">
-                    <div class="col list-wrapper">
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/1-150x150.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke">George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke</a></h6>
-                          <div class="post_info">
-                            <div class="post_label">Văn bản mẫu</div>
-                            <div class="post_time pt-1">31/01/2019</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/15-150x150.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke">George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke</a></h6>
-                          <div class="post_info">
-                            <div class="post_label">Văn bản mẫu</div>
-                            <div class="post_time pt-1">31/01/2019</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/18-150x150.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke">George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke</a></h6>
-                          <div class="post_info">
-                            <div class="post_label">Văn bản mẫu</div>
-                            <div class="post_time pt-1">31/01/2019</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="post post-wrapper list-item">
-                        <div class="post_img"><img src="../assets/img/24-150x150.jpg" alt=""/></div>
-                        <div class="post_body">
-                          <h6 class="post_title"><a href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke">George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke</a></h6>
-                          <div class="post_info">
-                            <div class="post_label">Văn bản mẫu</div>
-                            <div class="post_time pt-1">31/01/2019</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  <div class="form-group text-right"><a class="text-blue nowrap" href="./register.html">Đăng ký | </a><a class="text-blue nowrap" href="./forget_password.html">Quên mật khẩu?</a></div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="posts-group">
-            <div class="group_heading blue-line font-title mb-3"> <span>Văn bản luật</span></div>
-            <div class="group_content">
-              <div class="post post-wrapper">
-                <div class="post_img"><img src="../assets/img/18-324x160.jpg" alt=""/>
-                  <div class="post_label absolute">Văn bản luật</div>
-                </div>
-                <div class="post_body">
-                  <h5 class="post_title"><a href="#" title="Georgian soldier helped in attack near US base in Afghanistan">Georgian soldier helped in attack near US base in Afghanistan</a></h5>
-                  <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
-                  <div class="post_content">
-                    <p>All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... </p>
+      <div class="main-content">
+        <div class="container search-wrapper mt-5">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="posts-group">
+                <div class="group_heading red-line font-title mb-3">Tra cứu</div>
+                <div class="group_content">
+                  <div class="search_option">
+                    <h6 class="text-uppercase">Tìm văn bản pháp luật Việt Nam</h6>
+                    <div class="input-group mb-3">
+                      <input class="form-control br-none" type="text" placeholder="Nhập nội dung văn bản cần tìm..." aria-label="Enter finding text" aria-describedby="button-addon2"/>
+                      <div class="input-group-append">
+                        <button class="btn btn-white" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                      </div>
+                    </div>
+                    <div class="search_advanced">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance1" value="optionAll"/>
+                        <label class="form-check-label" for="rdoSearchAdvance1">Tất cả</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance2" value="optionTitle"/>
+                        <label class="form-check-label" for="rdoSearchAdvance2">Tiêu đề</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance3" value="optionNumber"/>
+                        <label class="form-check-label" for="rdoSearchAdvance3">Số hiệu văn bản</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="checkFindByWords" id="chkFindByWords" value="optionFindByWord"/>
+                        <label class="form-check-label" for="chkFindByWords">Chính xác cụm từ</label>
+                      </div>
+                      <div class="form-check form-check-inline ml-auto">
+                        <div class="text-green font-bold advance-toggle"><span>Nâng cao</span><i class="pl-1 fas fa-angle-down align-middle"></i></div>
+                      </div>
+                    </div>
+                    <div class="form-row mt-3 advance-content">
+                      <div class="form-group col-sm-6 col-md-3">
+                        <input class="form-control border-none datepicker" id="iptFrom" type="text" placeholder="Từ ngày (Ng/Thg/Năm)"/>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <input class="form-control border-none datepicker" id="iptFrom" type="text" placeholder="Đến ngày (Ng/Thg/Năm)"/>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control border-none" id="ddlType">
+                          <option selected="selected" disabled="disabled">Loại văn bản</option>
+                          <option value="1">Bản ghi nhớ</option>
+                          <option value="2">Báo cáo</option>
+                          <option value="3">Biên bản</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control border-none" id="ddlWhere">
+                          <option selected="selected" disabled="disabled">Cơ quan ban hành</option>
+                          <option value="1">Ban Bí Thư</option>
+                          <option value="2">Ban Cán sự Đảng</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control border-none" id="ddlStatus">
+                          <option selected="selected" disabled="disabled">Tình trạng hiệu lực</option>
+                          <option value="1">Còn hiệu lực</option>
+                          <option value="2">Không còn hiệu lực</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control border-none" id="ddlField">
+                          <option selected="selected" disabled="disabled">Lĩnh vực hoạt động</option>
+                          <option value="1">An ninh trật tự</option>
+                          <option value="2">An ninh Quốc gia</option>
+                          <option value="3">Bảo hiểm</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control border-none" id="ddlLang">
+                          <option selected="selected" disabled="disabled">Ngôn ngữ</option>
+                          <option value="1">Tiếng việt</option>
+                          <option value="2">English</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <input class="form-control border-none" id="iptSigner" type="text" placeholder="Người ký..."/>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="post post-wrapper list-item">
-                <div class="post_img"><img src="../assets/img/23-100x70.jpg" alt=""/></div>
-                <div class="post_body">
-                  <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
-                  <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                </div>
-              </div>
-              <div class="post post-wrapper list-item">
-                <div class="post_img"><img src="../assets/img/22-100x70.jpg" alt=""/></div>
-                <div class="post_body">
-                  <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
-                  <div class="post_info"><span class="post_time">31/01/2019</span></div>
-                </div>
-              </div>
             </div>
-            <div class="group-control my-3"><a class="control disabled" href="#"><i class="fas fa-chevron-left"></i></a><a class="control" href="#"><i class="fas fa-chevron-right"></i></a></div>
+            <div class="col-md-4">
+              <div class="ads-side"><img class="w-100" src="../assets/ads-side.jpg" alt=""/></div>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="posts-group">
-            <div class="group_heading red-line font-title mb-3">Định mức</div>
-            <div class="group_content">
-              <div class="post post-wrapper">
-                <div class="post_img"><img src="../assets/img/37-324x160.jpg" alt=""/>
-                  <div class="post_label absolute">Định mức</div>
-                </div>
-                <div class="post_body">
-                  <h5 class="post_title"><a href="#" title="Georgian soldier helped in attack near US base in Afghanistan">Georgian soldier helped in attack near US base in Afghanistan</a></h5>
-                  <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
-                  <div class="post_content">
-                    <p>All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... </p>
-                  </div>
+        <div class="container mt-5">
+          <div class="banner">
+            <div class="news main-news"><img src="../assets/img/15-534x462.jpg" alt=""/>
+              <div class="news_content"><a class="news_label" href="#">Photography</a>
+                <h3 class="news_title"><a href="./article_detail.html">Celebrity make-up artist Gary Cockerill shows you beauty trick</a></h3>
+                <div class="d-flex news_info"><span class="news_author">David Lee</span><span class="px-1">-</span><span class="news_time">September 24, 2015</span></div>
+              </div>
+            </div>
+            <div class="grid-news">
+              <div class="news"><img src="../assets/img/9-265x198.jpg" alt=""/>
+                <div class="news_content"><a class="news_label" href="#">Fashion</a>
+                  <h6 class="news_title"><a href="#">Fashion Week Parties: Night 4</a></h6>
                 </div>
               </div>
-              <div class="post post-wrapper list-item">
-                <div class="post_img"><img src="../assets/img/61-100x70.jpg" alt=""/></div>
-                <div class="post_body">
-                  <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
-                  <div class="post_info"><span class="post_time">31/01/2019</span></div>
+              <div class="news"><img src="../assets/img/18-265x198.jpg" alt=""/>
+                <div class="news_content"><a class="news_label" href="#">TECH</a>
+                  <h6 class="news_title"><a href="#">Gigabyte GeForce GTX 950 Review: Pricing Is Everything</a></h6>
                 </div>
               </div>
-              <div class="post post-wrapper list-item">
-                <div class="post_img"><img src="../assets/img/39-100x70.jpg" alt=""/></div>
-                <div class="post_body">
-                  <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
-                  <div class="post_info"><span class="post_time">31/01/2019</span></div>
+              <div class="news"><img src="../assets/img/54-265x198.jpg" alt=""/>
+                <div class="news_content"><a class="news_label" href="#">ART</a>
+                  <h6 class="news_title"><a href="#">A Thomas Hart Benton Mural, Repurposed as a Writing Desk</a></h6>
+                </div>
+              </div>
+              <div class="news"><img src="../assets/img/61-265x198.jpg" alt=""/>
+                <div class="news_content"><a class="news_label" href="#">HEALTH</a>
+                  <h6 class="news_title"><a href="#">The Workout That Burns More Calories Than Running</a></h6>
                 </div>
               </div>
             </div>
-            <div class="group-control my-3"><a class="control disabled" href="#"><i class="fas fa-chevron-left"></i></a><a class="control" href="#"><i class="fas fa-chevron-right"></i></a></div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="posts-group">
-            <div class="group_heading green-line font-title mb-3">Đơn giá</div>
-            <div class="group_content">
-              <div class="post post-wrapper">
-                <div class="post_img"><img src="../assets/img/38-324x160.jpg" alt=""/>
-                  <div class="post_label absolute">Đơn giá</div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-8">
+              <ul class="nav nav-tabs tabs" role="tablist">
+                <div class="tabs_heading font-title">Tin tức</div>
+                <li class="nav-item"><a class="active" data-toggle="tab" href="#tabtab1">Văn bản luật</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="#tabtab2">Định mức</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="#tabtab3">Đơn giá</a></li>
+              </ul>
+              <div class="tab-content py-1 py-sm-3">        
+                <div class="container tab-pane active p-0" id="tabtab1">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="post post-wrapper">
+                            <div class="post_img"><img src="../assets/img/1-324x235.jpg" alt=""/>
+                              <div class="post_label absolute">Văn bản luật</div>
+                            </div>
+                            <div class="post_body">
+                              <h5 class="post_title"><a href="#" title="Georgian soldier helped in attack near US base in Afghanistan">Georgian soldier helped in attack near US base in Afghanistan</a></h5>
+                              <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
+                              <div class="post_content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ex explicabo quos amet maxime aut voluptates rerum deleniti? Debitis doloremque excepturi quia sit. Corrupti blanditiis necessitatibus, odio nam sequi eveniet...</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 list-wrapper">
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/3-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/4-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/5-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Things to Look For in a Financial Trading Platform">Things to Look For in a Financial Trading Platform</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/6-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Kansas City has a massive network of underground caves">Kansas City has a massive network of underground caves</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/2-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Kansas City has a massive network of underground caves">Kansas City has a massive network of underground caves</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="text-right"><a class="btn btn-outline-red" href="#">Xem thêm</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="post_body">
-                  <h5 class="post_title"><a href="#" title="Georgian soldier helped in attack near US base in Afghanistan">Georgian soldier helped in attack near US base in Afghanistan</a></h5>
-                  <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
-                  <div class="post_content">
-                    <p>All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... </p>
+                <div class="container tab-pane p-0" id="tabtab2">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="post post-wrapper">
+                            <div class="post_img"><img src="../assets/img/15-324x235.jpg" alt=""/>
+                              <div class="post_label absolute">Định mức</div>
+                            </div>
+                            <div class="post_body">
+                              <h5 class="post_title"><a href="#" title="Celebrity make-up artist Gary Cockerill shows you beauty trick">Celebrity make-up artist Gary Cockerill shows you beauty trick</a></h5>
+                              <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
+                              <div class="post_content">
+                                <p>All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 list-wrapper">
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/16-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/14-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/13-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Things to Look For in a Financial Trading Platform">Things to Look For in a Financial Trading Platform</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/12-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Kansas City has a massive network of underground caves">Kansas City has a massive network of underground caves</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container tab-pane p-0" id="tabtab3">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="post post-wrapper">
+                            <div class="post_img"><img src="../assets/img/1-324x235.jpg" alt=""/>
+                              <div class="post_label absolute">Đơn giá</div>
+                            </div>
+                            <div class="post_body">
+                              <h5 class="post_title"><a href="#" title="Georgian soldier helped in attack near US base in Afghanistan">Georgian soldier helped in attack near US base in Afghanistan</a></h5>
+                              <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
+                              <div class="post_content">
+                                <p>All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 list-wrapper">
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/3-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/4-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/5-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Things to Look For in a Financial Trading Platform">Things to Look For in a Financial Trading Platform</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/6-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Kansas City has a massive network of underground caves">Kansas City has a massive network of underground caves</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/2-100x70.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Kansas City has a massive network of underground caves">Kansas City has a massive network of underground caves</a></h6>
+                              <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="post post-wrapper list-item">
-                <div class="post_img"><img src="../assets/img/10-100x70.jpg" alt=""/></div>
-                <div class="post_body">
-                  <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
-                  <div class="post_info"><span class="post_time">31/01/2019</span></div>
+            </div>
+            <div class="col-lg-4">
+              <ul class="nav nav-tabs tabs" role="tablist">
+                <div class="tabs_heading font-title">Xem nhiều</div>
+                <li class="nav-item"><a class="active" data-toggle="tab" href="#tabtabR1">Tất cả</a></li>
+                <li class="nav-item"><a data-toggle="tab" href="#tabtabR2">Khác</a></li>
+              </ul>
+              <div class="tab-content py-1 py-sm-3">        
+                <div class="container tab-pane active p-0" id="tabtabR1">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-6 list-wrapper">
+                          <div class="post post-wrapper list-item">
+                            <div class="post_thumbnail tb-green">NĐ                                        </div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Nghị định 09/2019/NĐ-CP quy định về chế độ báo cáo của cơ quan hành chính nhà nước">Nghị định 09/2019/NĐ-CP quy định về chế độ báo cáo của cơ quan hành chính nhà nước</a></h6>
+                              <div class="post_info">
+                                <div class="post_label">Văn bản luật</div>
+                                <div class="post_time pt-1">31/01/2019</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_thumbnail tb-cyan">QĐ  </div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Quyết định 05/2019/QĐ-TTg bãi bỏ văn bản quy phạm pháp luật do Thủ tướng Chính phủ ban hành">Quyết định 05/2019/QĐ-TTg bãi bỏ văn bản quy phạm pháp luật do Thủ tướng Chính phủ ban hành</a></h6>
+                              <div class="post_info">
+                                <div class="post_label">Văn bản luật</div>
+                                <div class="post_time pt-1">31/01/2019</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 list-wrapper">
+                          <div class="post post-wrapper list-item">
+                            <div class="post_thumbnail tb-red">TT  </div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Thông tư 30/2018/TT-BGDĐT về Quy chế quản lý người nước ngoài học tập tại Việt Nam do Bộ trưởng Bộ Giáo dục và Đào tạo ban hành">Thông tư 30/2018/TT-BGDĐT về Quy chế quản lý người nước ngoài học tập tại Việt Nam ...</a></h6>
+                              <div class="post_info">
+                                <div class="post_label">Văn bản luật</div>
+                                <div class="post_time pt-1">31/01/2019</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_thumbnail tb-brown">CT  </div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="Chỉ thị 01/CT-BXD năm 2019 về tổ chức Tết và tăng cường biện pháp bảo đảm đón Tết Nguyên đán Kỷ Hợi 2019 vui tươi, lành mạnh, an toàn, tiết kiệm do Bộ Xây dựng ban hành">Chỉ thị 01/CT-BXD năm 2019 về tổ chức Tết và tăng cường biện pháp bảo đảm đón Tết Nguyên đán ...</a></h6>
+                              <div class="post_info">
+                                <div class="post_label">Văn bản luật</div>
+                                <div class="post_time pt-1">31/01/2019</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="post post-wrapper list-item">
-                <div class="post_img"><img src="../assets/img/20-100x70.jpg" alt=""/></div>
-                <div class="post_body">
-                  <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
-                  <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                <div class="container tab-pane p-0" id="tabtabR2">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col list-wrapper">
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/1-150x150.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke">George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke</a></h6>
+                              <div class="post_info">
+                                <div class="post_label">Văn bản mẫu</div>
+                                <div class="post_time pt-1">31/01/2019</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/15-150x150.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke">George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke</a></h6>
+                              <div class="post_info">
+                                <div class="post_label">Văn bản mẫu</div>
+                                <div class="post_time pt-1">31/01/2019</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/18-150x150.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke">George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke</a></h6>
+                              <div class="post_info">
+                                <div class="post_label">Văn bản mẫu</div>
+                                <div class="post_time pt-1">31/01/2019</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="post post-wrapper list-item">
+                            <div class="post_img"><img src="../assets/img/24-150x150.jpg" alt=""/></div>
+                            <div class="post_body">
+                              <h6 class="post_title"><a href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke">George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke</a></h6>
+                              <div class="post_info">
+                                <div class="post_label">Văn bản mẫu</div>
+                                <div class="post_time pt-1">31/01/2019</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="group-control my-3"><a class="control disabled" href="#"><i class="fas fa-chevron-left"></i></a><a class="control" href="#"><i class="fas fa-chevron-right"></i></a></div>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="posts-group">
+                <div class="group_heading blue-line font-title mb-3"> <span>Văn bản luật</span></div>
+                <div class="group_content">
+                  <div class="post post-wrapper">
+                    <div class="post_img"><img src="../assets/img/18-324x160.jpg" alt=""/>
+                      <div class="post_label absolute">Văn bản luật</div>
+                    </div>
+                    <div class="post_body">
+                      <h5 class="post_title"><a href="#" title="Georgian soldier helped in attack near US base in Afghanistan">Georgian soldier helped in attack near US base in Afghanistan</a></h5>
+                      <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
+                      <div class="post_content">
+                        <p>All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post post-wrapper list-item">
+                    <div class="post_img"><img src="../assets/img/23-100x70.jpg" alt=""/></div>
+                    <div class="post_body">
+                      <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
+                      <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                    </div>
+                  </div>
+                  <div class="post post-wrapper list-item">
+                    <div class="post_img"><img src="../assets/img/22-100x70.jpg" alt=""/></div>
+                    <div class="post_body">
+                      <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
+                      <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group-control my-3"><a class="control disabled" href="#"><i class="fas fa-chevron-left"></i></a><a class="control" href="#"><i class="fas fa-chevron-right"></i></a></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="posts-group">
+                <div class="group_heading red-line font-title mb-3">Định mức</div>
+                <div class="group_content">
+                  <div class="post post-wrapper">
+                    <div class="post_img"><img src="../assets/img/37-324x160.jpg" alt=""/>
+                      <div class="post_label absolute">Định mức</div>
+                    </div>
+                    <div class="post_body">
+                      <h5 class="post_title"><a href="#" title="Georgian soldier helped in attack near US base in Afghanistan">Georgian soldier helped in attack near US base in Afghanistan</a></h5>
+                      <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
+                      <div class="post_content">
+                        <p>All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post post-wrapper list-item">
+                    <div class="post_img"><img src="../assets/img/61-100x70.jpg" alt=""/></div>
+                    <div class="post_body">
+                      <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
+                      <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                    </div>
+                  </div>
+                  <div class="post post-wrapper list-item">
+                    <div class="post_img"><img src="../assets/img/39-100x70.jpg" alt=""/></div>
+                    <div class="post_body">
+                      <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
+                      <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group-control my-3"><a class="control disabled" href="#"><i class="fas fa-chevron-left"></i></a><a class="control" href="#"><i class="fas fa-chevron-right"></i></a></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="posts-group">
+                <div class="group_heading green-line font-title mb-3">Đơn giá</div>
+                <div class="group_content">
+                  <div class="post post-wrapper">
+                    <div class="post_img"><img src="../assets/img/38-324x160.jpg" alt=""/>
+                      <div class="post_label absolute">Đơn giá</div>
+                    </div>
+                    <div class="post_body">
+                      <h5 class="post_title"><a href="#" title="Georgian soldier helped in attack near US base in Afghanistan">Georgian soldier helped in attack near US base in Afghanistan</a></h5>
+                      <div class="post_info"><span class="post_author">Author - </span><span class="post_time">31/01/2019</span></div>
+                      <div class="post_content">
+                        <p>All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post post-wrapper list-item">
+                    <div class="post_img"><img src="../assets/img/10-100x70.jpg" alt=""/></div>
+                    <div class="post_body">
+                      <h6 class="post_title"><a href="#" title="Cliffs of Moher reach 1 million visitors for 2016">Cliffs of Moher reach 1 million visitors for 2016</a></h6>
+                      <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                    </div>
+                  </div>
+                  <div class="post post-wrapper list-item">
+                    <div class="post_img"><img src="../assets/img/20-100x70.jpg" alt=""/></div>
+                    <div class="post_body">
+                      <h6 class="post_title"><a href="#" title="A Look at How Social &amp; Mobile Gaming Increase Sales">A Look at How Social &amp; Mobile Gaming Increase Sales</a></h6>
+                      <div class="post_info"><span class="post_time">31/01/2019</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group-control my-3"><a class="control disabled" href="#"><i class="fas fa-chevron-left"></i></a><a class="control" href="#"><i class="fas fa-chevron-right"></i></a></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer mt-5">
-      <div class="container py-5">
-        <div class="row mb-4">
-          <div class="col footer_logo"><img src="../assets/logo-footer.png" alt=""/></div>
-        </div>
-        <div class="row d-flex justify-content-center mb-4">
-          <div class="col-sm-10 col-md-8 text-center">
-            <p>Newspaper is your news, entertainment, music fashion website. We provide you with the latest breaking news and videos straight from the entertainment industry.</p>
-            <p>
-               Contact us: <a href="mailto:ourmail@gmail.com">ourmail@gmail.com</a></p>
+      <div class="main-footer">
+        <div class="footer mt-5">
+          <div class="container py-5">
+            <div class="row mb-4">
+              <div class="col footer_logo"><img src="../assets/logo-footer.png" alt=""/></div>
+            </div>
+            <div class="row d-flex justify-content-center mb-4">
+              <div class="col-sm-10 col-md-8 text-center">
+                <p>Newspaper is your news, entertainment, music fashion website. We provide you with the latest breaking news and videos straight from the entertainment industry.</p>
+                <p>
+                   Contact us: <a href="mailto:ourmail@gmail.com">ourmail@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href=""><i class="fas fa-envelope"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-youtube"></i></a><a href=""><i class="fab fa-instagram"></i></a></div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href=""><i class="fas fa-envelope"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-youtube"></i></a><a href=""><i class="fab fa-instagram"></i></a></div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copy-right">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">&copy; baogia.vn</div>
+        <div class="footer-copy-right">
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">&copy; baogia.vn</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
