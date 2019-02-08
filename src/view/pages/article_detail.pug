@@ -1,25 +1,64 @@
 extends ../layouts/layout_homepage.pug
 include ../mixins/_tab.pug
 block append main-content
-    .container.search-wrapper.mt-5
-        nav(aria-label="breadcrumb")
-            ol.breadcrumb
-                li.breadcrumb-item
-                    a(href="./index.html") Trang chủ
-                li.breadcrumb-item
-                    a(href="./index.html") Văn bản luật
-                li.breadcrumb-item.active(aria-current="page") Văn bản
+    //- .container.search-wrapper.mt-5
+    //-     nav(aria-label="breadcrumb")
+    //-         ol.breadcrumb
+    //-             li.breadcrumb-item
+    //-                 a(href="./index.html") Trang chủ
+    //-             li.breadcrumb-item
+    //-                 a(href="./index.html") Văn bản luật
+    //-             li.breadcrumb-item.active(aria-current="page") Văn bản
     .container.mt-5
         .row
-            .col-lg-8
-                +tabs([{id: 'tab1',name: 'Thuộc tính'},{id: 'tab2',name: 'Nội dung'},{id: 'tab3',name: 'Văn bản gốc'},{id: 'tab4',name: 'Lược đồ'},{id: 'tab5',name: 'Liên quan hiệu lực'},{id: 'tab6',name: 'Liên quan nộ dung'},{id: 'tab7',name: 'Tải về'}])         
+            .col-lg-9
+                +article-tabs([{id: 'tab1',name: 'Thuộc tính'},{id: 'tab2',name: 'Nội dung'},{id: 'tab3',name: 'Văn bản gốc'},{id: 'tab4',name: 'Lược đồ'},{id: 'tab5',name: 'Liên quan hiệu lực'},{id: 'tab6',name: 'Liên quan nội dung'},{id: 'tab7',name: 'Tải về'}])         
                     +tab-item('tab1','true')
                         .row
-                            .col
-                                | Thuộc tính
+                            .col.content-wrapper
+                                p Chỉ thị 03/CT-TTg năm 2019 thực hiện Nghị quyết 582/NQ-UBTVQH14 về nhiệm vụ giải pháp tiếp tục đẩy mạnh thực hiện chính sách, pháp luật về quản lý và sử dụng nguồn vốn vay nước ngoài do Thủ tướng Chính phủ ban hành
+                                .row.no-gutter
+                                    .col-sm-6
+                                        table.table.table-bordered
+                                            tbody
+                                                tr
+                                                    td.name Số hiệu
+                                                    td.data 03/CT-TTg
+                                                tr
+                                                    td.name Nơi ban hành
+                                                    td.data Thủ tướng Chính phủ
+                                                tr
+                                                    td.name Ngày ban hành
+                                                    td.data 30/01/2019
+                                                tr
+                                                    td.name Ngày công báo
+                                                    td.data Đang cập nhật
+                                    .col-sm-6
+                                        table.table.table-bordered
+                                            tbody
+                                                tr
+                                                    td.name Loại văn bản
+                                                    td.data Chỉ thị
+                                                tr
+                                                    td.name Người ký
+                                                    td.data Nguyễn Xuân Phúc
+                                                tr
+                                                    td.name Ngày hiệu lực
+                                                    td.data 30/01/2019
+                                                tr
+                                                    td.name Số công báo
+                                                    td.data Đang cập nhật
+                                                tr
+                                                    td.name Tình trạng
+                                                    td.data.text-red Còn hiệu lực
+
+                                
                     +tab-item('tab2')
                         .row
                             .col Nội dung
                     +tab-item('tab3')
                         .row
                             .col Tab 3
+            .col-lg-3
+                .ads-side
+                    img.w-100(src="../assets/ads-side.jpg", alt="")

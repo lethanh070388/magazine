@@ -7,6 +7,12 @@ html, body, td, th, input, button, select {
   font-weight: normal;
   font-size: 10px; }
 
+body {
+  -webkit-text-size-adjust: 100%; }
+
+@media screen and (min-width: 480px) {
+  html, body, td, th, input, button, select {
+    font-size: 11px; } }
 @media screen and (min-width: 576px) {
   html, body, td, th, input, button, select {
     font-size: 12px; } }
@@ -55,6 +61,9 @@ h2, .h2 {
 .text-white {
   color: #fff; }
 
+.text-red {
+  color: #e91e63; }
+
 .bg-dark {
   color: #303030 !important; }
 
@@ -72,6 +81,9 @@ h2, .h2 {
 
 .border-none {
   border: 0 !important; }
+
+.border-left-none {
+  border-left: 0 !important; }
 
 .breadcrumb-item + .breadcrumb-item:before {
   content: '\f054';
@@ -236,15 +248,21 @@ h2, .h2 {
 .article-detail :nth-child(2) {
   margin-left: 0 !important; }
 .article-detail .nav-item {
-  margin-right: 1em; }
+  margin-left: 0 !important; }
   .article-detail .nav-item a {
-    padding: .5em 0;
+    padding: .5em .5em;
     display: inline-block;
     color: #777;
     text-decoration: none;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-left: 0 !important;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease; }
     .article-detail .nav-item a.active, .article-detail .nav-item a:hover {
-      color: #222; }
+      color: #fff;
+      background-color: #009688; }
 
 .posts-group .group_heading {
   color: #222;
@@ -258,6 +276,12 @@ h2, .h2 {
     border-bottom-color: #e91e63; }
   .posts-group .group_heading.green-line {
     border-bottom-color: #009688; }
+  .posts-group .group_heading.black-line {
+    border-bottom-color: #1E1E1E; }
+  .posts-group .group_heading.grey-line {
+    border-bottom-color: #EAF0F0; }
+  .posts-group .group_heading.brown-line {
+    border-bottom-color: #CD7F13; }
 
 .group-control .control {
   display: inline-block;
@@ -280,6 +304,9 @@ h2, .h2 {
     color: #009688;
     border-color: #009688; }
 
+.group_content .post:last-of-type {
+  border-bottom: 0 !important; }
+
 .post img {
   width: 100%; }
 .post.list-item {
@@ -294,7 +321,7 @@ h2, .h2 {
   .post.list-item .post_body {
     padding-left: 1em; }
 .post_thumbnail {
-  width: 100px;
+  min-width: 100px;
   height: 100px;
   flex-basis: 100px;
   color: #fff;
@@ -320,8 +347,6 @@ h2, .h2 {
   .post_thumbnail.tb-grey {
     background-color: #EAF0F0;
     color: #111; }
-.post_body {
-  flex-basis: calc(100% - 100px); }
 .post_img {
   position: relative; }
 .post_label {
@@ -366,6 +391,57 @@ h2, .h2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
+
+.search-wrapper .post {
+  padding-bottom: 0.8em;
+  border-bottom: 1px dotted #ccc; }
+  .search-wrapper .post.list-item {
+    display: flex;
+    align-items: stretch; }
+  .search-wrapper .post_thumbnail {
+    min-width: 80px;
+    height: 80px;
+    flex-basis: 80px;
+    font-size: 3.2em;
+    position: relative; }
+  .search-wrapper .post_count {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 0.3em;
+    font-family: monospace;
+    color: #fff;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1); }
+  .search-wrapper .post_status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .search-wrapper .post_status > * {
+      font-size: 0.85em;
+      display: flex;
+      white-space: nowrap;
+      font-weight: normal;
+      color: #aaa;
+      justify-content: space-between; }
+      .search-wrapper .post_status > * span {
+        font-weight: normal;
+        padding-left: .5em; }
+  .search-wrapper .post_body {
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column; }
+  .search-wrapper .post_title {
+    flex-grow: 1;
+    margin-bottom: 0 !important; }
+  .search-wrapper .post_footer a {
+    display: inline-block;
+    padding-right: .5em;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #aaa; }
+    .search-wrapper .post_footer a:hover {
+      color: #009688; }
 
 .footer {
   background-color: #222;
@@ -598,6 +674,21 @@ h2, .h2 {
   .advance-toggle i {
     margin-top: -2px; }
 
+#iptFromYear,
+#iptToYear {
+  max-width: 80px; }
+
+@media screen and (max-width: 767px) {
+  .w-md-full {
+    width: 100%; }
+
+  .search-box {
+    min-width: 250px;
+    border-top: 0 !important; }
+
+  .btn-search {
+    border-top: 0;
+    margin-right: 1px; } }
 .statistic {
   padding-bottom: 120%;
   background-color: black;
@@ -673,5 +764,7 @@ h2, .h2 {
   .modal-dialog {
     max-width: 320px;
     margin: 1.75rem auto; } }
+.table .name {
+  font-weight: bold; }
 
 /*# sourceMappingURL=app.css.map */

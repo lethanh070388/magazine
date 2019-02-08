@@ -28,7 +28,8 @@ $thumbnail-radius: 100px;
 $text-colors: () !default;
 $text-colors: map-merge((
     "text-green": $primary-color,
-    "text-white": $white
+    "text-white": $white,
+    "text-red": $red
 ), $text-colors);
 
 @each $name,$color in $text-colors{

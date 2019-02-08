@@ -12,7 +12,7 @@ block append main-content
                         .search_option
                             h6.text-uppercase Tìm văn bản pháp luật Việt Nam
                             .input-group.mb-3
-                                input.form-control.br-none(type="email" placeholder="Nhập nội dung văn bản cần tìm..." aria-label="Enter finding text" aria-describedby="button-addon2")
+                                input.form-control.br-none(type="text" placeholder="Nhập nội dung văn bản cần tìm..." aria-label="Enter finding text" aria-describedby="button-addon2")
                                 .input-group-append
                                     button.btn.btn-white(type="button" id="button-addon2")
                                         i.fas.fa-search
@@ -354,7 +354,8 @@ block append main-content
         .row
             .col-md-4
                 .posts-group
-                    .group_heading.blue-line.font-title.mb-3 Văn bản luật
+                    .group_heading.blue-line.font-title.mb-3 
+                        span Văn bản luật
                     .group_content
                         .post.post-wrapper
                             .post_img
