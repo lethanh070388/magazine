@@ -8,27 +8,29 @@ block append main-content
                     .group_heading.red-line.font-title.mb-3 Tra cứu
                     .group_content
                         .search_option
-                            h6.text-uppercase Tìm văn bản pháp luật Việt Nam theo giá
+                            h6.text-uppercase Tìm văn bản pháp luật Việt Nam theo giá địa phương
                             .input-group.mb-3
                                 .input-group-prepend.w-md-full
                                     select#ddlType.form-control
                                         option(selected disabled) Loại
-                                        option(value="1") Văn bản hướng dẫn
-                                        option(value="2") Đơn giá
-                                        option(value="3") Công bố giá liên sở
-                                        option(value="4") Ca máy
-                                        option(value="5") Vận chuyển
-                                    select#ddlLocation.form-control.border-left-none
-                                        option(selected disabled) Địa phương
-                                        option(value="1") Hồ Chí Minh
-                                        option(value="2") Hà Nội
-                                        option(value="3") Cần Thơ
-                                        option(value="4") Hải Phòng
-                                        option(value="6") Đà Nẵng
-                                        option(value="7") Bình Dương
-                                        option(value="8") Cà Mau
-                                        option(value="9") Bà Rịa - Vũng Tàu
-                                        option(value="10") Lâm Đồng
+                                        option(disabled) ---Thép---
+                                        option(value="1001") Thép hình
+                                        option(value="1002") Thép hộp
+                                        option(value="1003") Thép ống
+                                        option(value="1004") Thép tấm
+                                        option(value="1005") Tôn
+                                        option(value="1006") Xà gỗ
+                                        option(disabled) ---Thiết bị điện---
+                                        option(value="2001") Điện dân dụng
+                                        option(value="2002") Điện công nghiệp
+                                        option(disabled) ---Vật tư ngành nước---
+                                        option(value="3001") Ống nhựa tiền phong
+                                        option(value="3002") Bồn nước bình nước
+                                        option(disabled) ---Khác---
+                                        option(value="4001") Sản phẩm khác
+                                    select#ddlSupplier.form-control.border-left-none
+                                        option(selected disabled) Nhà cung cấp
+                                        option(value="1") Nhựa Tiền Phong
                                     input#iptFromYear.form-control.datepicker.border-left-none.text-center.date-control(type="text" placeholder="Từ năm")
                                     input#iptToYear.form-control.datepicker.border-left-none.text-center.date-control(type="text" placeholder="Đến năm")
                                 input.form-control.br-none.search-box(type="text" placeholder="Nhập nội dung văn bản cần tìm..." aria-label="Enter finding text" aria-describedby="button-addon2")

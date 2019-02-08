@@ -50,28 +50,30 @@
                 <div class="group_heading red-line font-title mb-3">Tra cứu</div>
                 <div class="group_content">
                   <div class="search_option">
-                    <h6 class="text-uppercase">Tìm văn bản pháp luật Việt Nam theo giá</h6>
+                    <h6 class="text-uppercase">Tìm văn bản pháp luật Việt Nam theo giá địa phương</h6>
                     <div class="input-group mb-3">
                       <div class="input-group-prepend w-md-full">
                         <select class="form-control" id="ddlType">
                           <option selected="selected" disabled="disabled">Loại</option>
-                          <option value="1">Văn bản hướng dẫn</option>
-                          <option value="2">Đơn giá</option>
-                          <option value="3">Công bố giá liên sở</option>
-                          <option value="4">Ca máy</option>
-                          <option value="5">Vận chuyển</option>
+                          <option disabled="disabled">---Thép---</option>
+                          <option value="1001">Thép hình</option>
+                          <option value="1002">Thép hộp</option>
+                          <option value="1003">Thép ống</option>
+                          <option value="1004">Thép tấm</option>
+                          <option value="1005">Tôn</option>
+                          <option value="1006">Xà gỗ</option>
+                          <option disabled="disabled">---Thiết bị điện---</option>
+                          <option value="2001">Điện dân dụng</option>
+                          <option value="2002">Điện công nghiệp</option>
+                          <option disabled="disabled">---Vật tư ngành nước---</option>
+                          <option value="3001">Ống nhựa tiền phong</option>
+                          <option value="3002">Bồn nước bình nước</option>
+                          <option disabled="disabled">---Khác---</option>
+                          <option value="4001">Sản phẩm khác</option>
                         </select>
-                        <select class="form-control border-left-none" id="ddlLocation">
-                          <option selected="selected" disabled="disabled">Địa phương</option>
-                          <option value="1">Hồ Chí Minh</option>
-                          <option value="2">Hà Nội</option>
-                          <option value="3">Cần Thơ</option>
-                          <option value="4">Hải Phòng</option>
-                          <option value="6">Đà Nẵng</option>
-                          <option value="7">Bình Dương</option>
-                          <option value="8">Cà Mau</option>
-                          <option value="9">Bà Rịa - Vũng Tàu</option>
-                          <option value="10">Lâm Đồng</option>
+                        <select class="form-control border-left-none" id="ddlSupplier">
+                          <option selected="selected" disabled="disabled">Nhà cung cấp</option>
+                          <option value="1">Nhựa Tiền Phong</option>
                         </select>
                         <input class="form-control datepicker border-left-none text-center date-control" id="iptFromYear" type="text" placeholder="Từ năm"/>
                         <input class="form-control datepicker border-left-none text-center date-control" id="iptToYear" type="text" placeholder="Đến năm"/>
