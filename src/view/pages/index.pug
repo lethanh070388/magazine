@@ -120,55 +120,46 @@ block append main-content
                                         .post_label.absolute Văn bản luật
                                     .post_body
                                         h5.post_title
-                                            a(href="#" title="Georgian soldier helped in attack near US base in Afghanistan") Georgian soldier helped in attack near US base in Afghanistan
+                                            a(href="#" title="Báo cáo 438/BC-BGDĐT thi đại học đợt 1 tuyển sinh đại học, cao đẳng 2009") Báo cáo 438/BC-BGDĐT thi đại học đợt 1 tuyển sinh đại học, cao đẳng 2009
                                         .post_info
                                             span.post_author Author - 
                                             span.post_time 31/01/2019
                                         .post_content
-                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ex explicabo quos amet maxime aut voluptates rerum deleniti? Debitis doloremque excepturi quia sit. Corrupti blanditiis necessitatibus, odio nam sequi eveniet...
+                                            p Ngày 4 và 5 tháng 7 năm 2009, toàn quốc có 93 các trường tổ chức thi đại học đợt I (gồm 78 đại học, học viện và 15 trường đại học khối các trường quân đội)...
                             .col-md-6.list-wrapper
                                 .post.post-wrapper.list-item
-                                    .post_img
-                                        img(src="../assets/img/3-100x70.jpg", alt="")
+                                    .post_thumbnail.tb-green NĐ                                        
                                     .post_body
                                         h6.post_title
-                                            a(href="#" title="Cliffs of Moher reach 1 million visitors for 2016") Cliffs of Moher reach 1 million visitors for 2016
+                                            a(href="#" title="Nghị định 09/2019/NĐ-CP quy định về chế độ báo cáo của cơ quan hành chính nhà nước") Nghị định 09/2019/NĐ-CP quy định về chế độ báo cáo của cơ quan hành chính nhà nước
                                         .post_info
-                                            span.post_time 31/01/2019
+                                            .post_time.pt-1 31/01/2019
                                 .post.post-wrapper.list-item
-                                    .post_img
-                                        img(src="../assets/img/4-100x70.jpg", alt="")
-                                    .post_body
-                                        h6.post_title
-                                            a(href="#" title="A Look at How Social & Mobile Gaming Increase Sales") A Look at How Social &amp; Mobile Gaming Increase Sales
-                                        .post_info
-                                            span.post_time 31/01/2019
+                                        .post_thumbnail.tb-cyan QĐ  
+                                        .post_body
+                                            h6.post_title
+                                                a(href="#" title="Quyết định 05/2019/QĐ-TTg bãi bỏ văn bản quy phạm pháp luật do Thủ tướng Chính phủ ban hành") Quyết định 05/2019/QĐ-TTg bãi bỏ văn bản quy phạm pháp luật do Thủ tướng Chính phủ ban hành
+                                            .post_info
+                                                .post_time.pt-1 31/01/2019
                                 .post.post-wrapper.list-item
-                                    .post_img
-                                        img(src="../assets/img/5-100x70.jpg", alt="")
+                                    .post_thumbnail.tb-purple TB                                       
                                     .post_body
                                         h6.post_title
-                                            a(href="#" title="Things to Look For in a Financial Trading Platform") Things to Look For in a Financial Trading Platform
+                                            a(href="#" title="Thông báo 33/TB-VPCP ý kiến Thủ tướng Nguyễn Tấn Dũng điều chỉnh phân công công tác thành viên Chính phủ") Thông báo 33/TB-VPCP ý kiến Thủ tướng Nguyễn Tấn Dũng điều chỉnh phân công công tác thành viên Chính phủ
                                         .post_info
-                                            span.post_time 31/01/2019
+                                            .post_time.pt-1 31/01/2019
                                 .post.post-wrapper.list-item
-                                    .post_img
-                                        img(src="../assets/img/6-100x70.jpg", alt="")
-                                    .post_body
-                                        h6.post_title
-                                            a(href="#" title="Kansas City has a massive network of underground caves") Kansas City has a massive network of underground caves
-                                        .post_info
-                                            span.post_time 31/01/2019
-                                .post.post-wrapper.list-item
-                                    .post_img
-                                        img(src="../assets/img/2-100x70.jpg", alt="")
-                                    .post_body
-                                        h6.post_title
-                                            a(href="#" title="Kansas City has a massive network of underground caves") Kansas City has a massive network of underground caves
-                                        .post_info
-                                            span.post_time 31/01/2019
-                                .text-right
-                                    a.btn.btn-outline-red(href="#") Xem thêm
+                                        .post_thumbnail.tb-red TT 
+                                        .post_body
+                                            h6.post_title
+                                                a(href="#" title="Thông tư liên bộ 06TT/LB hướng dẫn lập kế hoạch, cấp phát, cấp phát quyết toán kinh phí công tác phòng cháy, chữa cháy rừng") Thông tư liên bộ 06TT/LB hướng dẫn lập kế hoạch, cấp phát, ...
+                                            .post_info
+                                                .post_time.pt-1 31/01/2019
+                                .group-control.my-3
+                                    a.control.disabled(href="#")
+                                        i.fas.fa-chevron-left
+                                    a.control(href="#")
+                                        i.fas.fa-chevron-right
                     +tab-item('tab2')
                         .row
                             .col-sm-6
@@ -274,8 +265,10 @@ block append main-content
                                         .post_info
                                             span.post_time 31/01/2019
             .col-lg-4
-                +tabs([{id: 'tabR1',name: 'Tất cả'},{id: 'tabR2',name: 'Khác'}],"Xem nhiều")         
-                    +tab-item('tabR1','true')
+                 .posts-group
+                    .group_heading.brown-line.font-title.mb-3 
+                        span Xem nhiều
+                    .group_content
                         .row
                             .col-lg-12.col-md-6.list-wrapper
                                 .post.post-wrapper.list-item
@@ -284,7 +277,6 @@ block append main-content
                                         h6.post_title
                                             a(href="#" title="Nghị định 09/2019/NĐ-CP quy định về chế độ báo cáo của cơ quan hành chính nhà nước") Nghị định 09/2019/NĐ-CP quy định về chế độ báo cáo của cơ quan hành chính nhà nước
                                         .post_info
-                                            .post_label Văn bản luật
                                             .post_time.pt-1 31/01/2019
                                 .post.post-wrapper.list-item
                                         .post_thumbnail.tb-cyan QĐ  
@@ -292,7 +284,6 @@ block append main-content
                                             h6.post_title
                                                 a(href="#" title="Quyết định 05/2019/QĐ-TTg bãi bỏ văn bản quy phạm pháp luật do Thủ tướng Chính phủ ban hành") Quyết định 05/2019/QĐ-TTg bãi bỏ văn bản quy phạm pháp luật do Thủ tướng Chính phủ ban hành
                                             .post_info
-                                                .post_label Văn bản luật
                                                 .post_time.pt-1 31/01/2019
                             .col-lg-12.col-md-6.list-wrapper
                                 .post.post-wrapper.list-item
@@ -301,7 +292,6 @@ block append main-content
                                             h6.post_title
                                                 a(href="#" title="Thông tư 30/2018/TT-BGDĐT về Quy chế quản lý người nước ngoài học tập tại Việt Nam do Bộ trưởng Bộ Giáo dục và Đào tạo ban hành") Thông tư 30/2018/TT-BGDĐT về Quy chế quản lý người nước ngoài học tập tại Việt Nam ...
                                             .post_info
-                                                .post_label Văn bản luật
                                                 .post_time.pt-1 31/01/2019
                                 .post.post-wrapper.list-item
                                         .post_thumbnail.tb-brown CT  
@@ -309,47 +299,12 @@ block append main-content
                                             h6.post_title
                                                 a(href="#" title="Chỉ thị 01/CT-BXD năm 2019 về tổ chức Tết và tăng cường biện pháp bảo đảm đón Tết Nguyên đán Kỷ Hợi 2019 vui tươi, lành mạnh, an toàn, tiết kiệm do Bộ Xây dựng ban hành") Chỉ thị 01/CT-BXD năm 2019 về tổ chức Tết và tăng cường biện pháp bảo đảm đón Tết Nguyên đán ...
                                             .post_info
-                                                .post_label Văn bản luật
                                                 .post_time.pt-1 31/01/2019
-                    +tab-item('tabR2')
-                        .row
-                            .col.list-wrapper
-                                .post.post-wrapper.list-item
-                                    .post_img
-                                        img(src="../assets/img/1-150x150.jpg", alt="")
-                                    .post_body
-                                        h6.post_title
-                                            a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
-                                        .post_info
-                                            .post_label Văn bản mẫu
-                                            .post_time.pt-1 31/01/2019
-                                .post.post-wrapper.list-item
-                                        .post_img
-                                            img(src="../assets/img/15-150x150.jpg", alt="")
-                                        .post_body
-                                            h6.post_title
-                                                a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
-                                            .post_info
-                                                .post_label Văn bản mẫu
-                                                .post_time.pt-1 31/01/2019
-                                .post.post-wrapper.list-item
-                                        .post_img
-                                            img(src="../assets/img/18-150x150.jpg", alt="")
-                                        .post_body
-                                            h6.post_title
-                                                a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
-                                            .post_info
-                                                .post_label Văn bản mẫu
-                                                .post_time.pt-1 31/01/2019
-                                .post.post-wrapper.list-item
-                                        .post_img
-                                            img(src="../assets/img/24-150x150.jpg", alt="")
-                                        .post_body
-                                            h6.post_title
-                                                a(href="#" title="George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke") George Boateng: Keeping Ron Vlaar was Paul Lambert masterstroke
-                                            .post_info
-                                                .post_label Văn bản mẫu
-                                                .post_time.pt-1 31/01/2019
+                    .group-control.my-3
+                        a.control.disabled(href="#")
+                            i.fas.fa-chevron-left
+                        a.control(href="#")
+                            i.fas.fa-chevron-right
     .container.mt-5
         .row
             .col-md-4
@@ -363,28 +318,26 @@ block append main-content
                                 .post_label.absolute Văn bản luật
                             .post_body
                                 h5.post_title
-                                    a(href="#" title="Georgian soldier helped in attack near US base in Afghanistan") Georgian soldier helped in attack near US base in Afghanistan
+                                    a(href="#" title="Kế hoạch 43/KH-UBND 2018 giáo dục pháp luật cho người đang chấp hành hình phạt tù Lạng Sơn") Kế hoạch 43/KH-UBND 2018 giáo dục pháp luật cho người đang chấp hành hình phạt tù Lạng Sơn
                                 .post_info
                                     span.post_author Author - 
                                     span.post_time 31/01/2019
                                 .post_content
-                                    p All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... 
+                                    p Thực hiện Quyết định số 2045/QĐ-TTg , ngày 19/12/2017 của Thủ tướng Chính phủ về việc phê duyệt Đề án tăng cường phổ biến, giáo dục pháp luật cho người đang chấp hành hình phạt tù; người bị áp dụng các biện pháp tư pháp hoặc các biện pháp xử lý hành chính...
                         .post.post-wrapper.list-item
-                            .post_img
-                                img(src="../assets/img/23-100x70.jpg", alt="")
+                            .post_thumbnail.tb-purple TB                                       
                             .post_body
                                 h6.post_title
-                                    a(href="#" title="Cliffs of Moher reach 1 million visitors for 2016") Cliffs of Moher reach 1 million visitors for 2016
+                                    a(href="#" title="Thông báo 33/TB-VPCP ý kiến Thủ tướng Nguyễn Tấn Dũng điều chỉnh phân công công tác thành viên Chính phủ") Thông báo 33/TB-VPCP ý kiến Thủ tướng Nguyễn Tấn Dũng điều chỉnh phân công công tác thành viên Chính phủ
                                 .post_info
-                                    span.post_time 31/01/2019
+                                    .post_time.pt-1 31/01/2019
                         .post.post-wrapper.list-item
-                            .post_img
-                                img(src="../assets/img/22-100x70.jpg", alt="")
-                            .post_body
-                                h6.post_title
-                                    a(href="#" title="A Look at How Social & Mobile Gaming Increase Sales") A Look at How Social &amp; Mobile Gaming Increase Sales
-                                .post_info
-                                    span.post_time 31/01/2019
+                                .post_thumbnail.tb-red TT 
+                                .post_body
+                                    h6.post_title
+                                        a(href="#" title="Thông tư liên bộ 06TT/LB hướng dẫn lập kế hoạch, cấp phát, cấp phát quyết toán kinh phí công tác phòng cháy, chữa cháy rừng") Thông tư liên bộ 06TT/LB hướng dẫn lập kế hoạch, cấp phát, ...
+                                    .post_info
+                                        .post_time.pt-1 31/01/2019
                     .group-control.my-3
                         a.control.disabled(href="#")
                             i.fas.fa-chevron-left
@@ -400,28 +353,26 @@ block append main-content
                                 .post_label.absolute Định mức
                             .post_body
                                 h5.post_title
-                                    a(href="#" title="Georgian soldier helped in attack near US base in Afghanistan") Georgian soldier helped in attack near US base in Afghanistan
+                                    a(href="#" title="Thông báo 33/TB-VPCP ý kiến Thủ tướng Nguyễn Tấn Dũng điều chỉnh phân công công tác thành viên Chính phủ") Thông báo 33/TB-VPCP ý kiến Thủ tướng Nguyễn Tấn Dũng điều chỉnh phân công công tác thành viên Chính phủ
                                 .post_info
                                     span.post_author Author - 
                                     span.post_time 31/01/2019
                                 .post_content
-                                    p All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... 
+                                    p Thực hiện sự phân công của Bộ Chính trị đối với một số đồng chí Ủy viên Bộ Chính trị và Bí thư Trung ương Đảng; xét đề nghị của Bộ trưởng Bộ Giao thông vận tải và Bộ trưởng, Chủ nhiệm Văn phòng Chính phủ, Thủ tướng Nguyễn Tấn Dũng điều chỉnh phân công công tác của các thành viên Chính phủ ...
                         .post.post-wrapper.list-item
-                            .post_img
-                                img(src="../assets/img/61-100x70.jpg", alt="")
+                            .post_thumbnail.tb-green NĐ                                        
                             .post_body
                                 h6.post_title
-                                    a(href="#" title="Cliffs of Moher reach 1 million visitors for 2016") Cliffs of Moher reach 1 million visitors for 2016
+                                    a(href="#" title="Nghị định 04/2019/NĐ-CP quy định về tiêu chuẩn, định mức sử dụng xe ô tô") Nghị định 04/2019/NĐ-CP quy định về tiêu chuẩn, định mức sử dụng xe ô tô
                                 .post_info
-                                    span.post_time 31/01/2019
+                                    .post_time.pt-1 31/01/2019
                         .post.post-wrapper.list-item
-                            .post_img
-                                img(src="../assets/img/39-100x70.jpg", alt="")
-                            .post_body
-                                h6.post_title
-                                    a(href="#" title="A Look at How Social & Mobile Gaming Increase Sales") A Look at How Social &amp; Mobile Gaming Increase Sales
-                                .post_info
-                                    span.post_time 31/01/2019
+                                .post_thumbnail.tb-cyan QĐ  
+                                .post_body
+                                    h6.post_title
+                                        a(href="#" title="Quyết định 90/QĐ-BGDĐT năm 2019 công bố thủ tục hành chính bị bãi bỏ thuộc phạm vi chức năng quản lý của Bộ Giáo dục và đào tạo") Quyết định 90/QĐ-BGDĐT năm 2019 công bố thủ tục hành chính bị bãi bỏ...
+                                    .post_info
+                                        .post_time.pt-1 31/01/2019
                     .group-control.my-3
                         a.control.disabled(href="#")
                             i.fas.fa-chevron-left
@@ -437,33 +388,105 @@ block append main-content
                                 .post_label.absolute Đơn giá
                             .post_body
                                 h5.post_title
-                                    a(href="#" title="Georgian soldier helped in attack near US base in Afghanistan") Georgian soldier helped in attack near US base in Afghanistan
+                                    a(href="#" title="Chỉ thị 20-CTmở cuộc vận động giữ gìn dùng sách giáo khoa cũ") Chỉ thị 20-CTmở cuộc vận động giữ gìn dùng sách giáo khoa cũ
                                 .post_info
                                     span.post_author Author - 
                                     span.post_time 31/01/2019
                                 .post_content
-                                    p All right. Well, take care yourself. I guess that's what you're best, presence old master? A tremor in the Force. The last time felt... 
+                                    p Sách giáo khoa là công cụ quan trọng của nhà trường. Đảng và Chính phủ rất quan tâm đến sách giáo khoa, hàng năm đã cho in và phân phối một khối lượng sách rất lớn vào nhà trường. Nhưng do yêu cầu thì cao mà sách in có hạn, nên sách giáo khoa thường bị thiếu, nhiều địa phương đã vận động các em dùng sách cũ, thu kết quả tốt...
                         .post.post-wrapper.list-item
-                            .post_img
-                                img(src="../assets/img/10-100x70.jpg", alt="")
+                            .post_thumbnail.tb-brown CT
                             .post_body
                                 h6.post_title
-                                    a(href="#" title="Cliffs of Moher reach 1 million visitors for 2016") Cliffs of Moher reach 1 million visitors for 2016
+                                    a(href="#" title="Chỉ thị 20-CTmở cuộc vận động giữ gìn dùng sách giáo khoa cũ") Chỉ thị 20-CTmở cuộc vận động giữ gìn dùng sách giáo khoa cũ
                                 .post_info
                                     span.post_time 31/01/2019
                         .post.post-wrapper.list-item
-                            .post_img
-                                img(src="../assets/img/20-100x70.jpg", alt="")
-                            .post_body
-                                h6.post_title
-                                    a(href="#" title="A Look at How Social & Mobile Gaming Increase Sales") A Look at How Social &amp; Mobile Gaming Increase Sales
-                                .post_info
-                                    span.post_time 31/01/2019
+                                .post_thumbnail.tb-cyan QĐ  
+                                .post_body
+                                    h6.post_title
+                                        a(href="#" title="Quyết định 90/QĐ-BGDĐT năm 2019 công bố thủ tục hành chính bị bãi bỏ thuộc phạm vi chức năng quản lý của Bộ Giáo dục và đào tạo") Quyết định 90/QĐ-BGDĐT năm 2019 công bố thủ tục hành chính bị bãi bỏ...
+                                    .post_info
+                                        .post_time.pt-1 31/01/2019
                     .group-control.my-3
                         a.control.disabled(href="#")
                             i.fas.fa-chevron-left
                         a.control(href="#")
                             i.fas.fa-chevron-right
+    .container.mt-5
+        .row
+            .col-md-6.posts-group
+                .group_heading.cyan-line.font-title.mb-3 Giá vật liệu xây dựng
+                .group_content
+                    .post.post-wrapper.list-item
+                        .post_thumbnail.tb-brown CT
+                        .post_body
+                            h6.post_title
+                                a(href="#" title="Chỉ thị 20-CTmở cuộc vận động giữ gìn dùng sách giáo khoa cũ") Chỉ thị 20-CTmở cuộc vận động giữ gìn dùng sách giáo khoa cũ
+                            .post_info
+                                span.post_time 31/01/2019
+                    .post.post-wrapper.list-item
+                            .post_thumbnail.tb-cyan QĐ  
+                            .post_body
+                                h6.post_title
+                                    a(href="#" title="Quyết định 90/QĐ-BGDĐT năm 2019 công bố thủ tục hành chính bị bãi bỏ thuộc phạm vi chức năng quản lý của Bộ Giáo dục và đào tạo") Quyết định 90/QĐ-BGDĐT năm 2019 công bố thủ tục hành chính bị bãi bỏ...
+                                .post_info
+                                    .post_time.pt-1 31/01/2019
+                    .post.post-wrapper.list-item
+                        .post_thumbnail.tb-purple TB                                       
+                        .post_body
+                            h6.post_title
+                                a(href="#" title="Thông báo 33/TB-VPCP ý kiến Thủ tướng Nguyễn Tấn Dũng điều chỉnh phân công công tác thành viên Chính phủ") Thông báo 33/TB-VPCP ý kiến Thủ tướng Nguyễn Tấn Dũng điều chỉnh phân công công tác thành viên Chính phủ
+                            .post_info
+                                .post_time.pt-1 31/01/2019
+                    .post.post-wrapper.list-item
+                            .post_thumbnail.tb-red TT 
+                            .post_body
+                                h6.post_title
+                                    a(href="#" title="Thông tư liên bộ 06TT/LB hướng dẫn lập kế hoạch, cấp phát, cấp phát quyết toán kinh phí công tác phòng cháy, chữa cháy rừng") Thông tư liên bộ 06TT/LB hướng dẫn lập kế hoạch, cấp phát, ...
+                                .post_info
+                                    .post_time.pt-1 31/01/2019
+                .group-control.my-3
+                    a.control.disabled(href="#")
+                        i.fas.fa-chevron-left
+                    a.control(href="#")
+                        i.fas.fa-chevron-right
+            .col-md-6.posts-group
+                .group_heading.black-line.font-title.mb-3 Văn bản mẫu
+                .group_content
+                    .post.post-wrapper.list-item
+                        .post_thumbnail.tb-brown CT
+                        .post_body
+                            h6.post_title
+                                a(href="#" title="Chỉ thị 20-CTmở cuộc vận động giữ gìn dùng sách giáo khoa cũ") Chỉ thị 20-CTmở cuộc vận động giữ gìn dùng sách giáo khoa cũ
+                            .post_info
+                                span.post_time 31/01/2019
+                    .post.post-wrapper.list-item
+                            .post_thumbnail.tb-cyan QĐ  
+                            .post_body
+                                h6.post_title
+                                    a(href="#" title="Quyết định 90/QĐ-BGDĐT năm 2019 công bố thủ tục hành chính bị bãi bỏ thuộc phạm vi chức năng quản lý của Bộ Giáo dục và đào tạo") Quyết định 90/QĐ-BGDĐT năm 2019 công bố thủ tục hành chính bị bãi bỏ...
+                                .post_info
+                                    .post_time.pt-1 31/01/2019
+                    .post.post-wrapper.list-item
+                        .post_thumbnail.tb-purple TB                                       
+                        .post_body
+                            h6.post_title
+                                a(href="#" title="Thông báo 33/TB-VPCP ý kiến Thủ tướng Nguyễn Tấn Dũng điều chỉnh phân công công tác thành viên Chính phủ") Thông báo 33/TB-VPCP ý kiến Thủ tướng Nguyễn Tấn Dũng điều chỉnh phân công công tác thành viên Chính phủ
+                            .post_info
+                                .post_time.pt-1 31/01/2019
+                    .post.post-wrapper.list-item
+                            .post_thumbnail.tb-red TT 
+                            .post_body
+                                h6.post_title
+                                    a(href="#" title="Thông tư liên bộ 06TT/LB hướng dẫn lập kế hoạch, cấp phát, cấp phát quyết toán kinh phí công tác phòng cháy, chữa cháy rừng") Thông tư liên bộ 06TT/LB hướng dẫn lập kế hoạch, cấp phát, ...
+                                .post_info
+                                    .post_time.pt-1 31/01/2019
+                .group-control.my-3
+                    a.control.disabled(href="#")
+                        i.fas.fa-chevron-left
+                    a.control(href="#")
+                        i.fas.fa-chevron-right
     //- .container
     //-     .row
     //-         .col-sm-6.col-md-3

@@ -58,4 +58,9 @@ $(function(){
         $('.pushy').css("transform","translateX(-340px)");
         $('body').removeClass("pushy-open-left");
     });
+
+    $('.site-overlay').click(function(){
+        $('.pushy').css("transform","translateX(-340px)");
+        $('body').removeClass("pushy-open-left");
+    });
 });

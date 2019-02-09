@@ -34,6 +34,9 @@ body {
   .font-title {
     font-size: 18px;
     font-weight: bold; } }
+.font-normal {
+  font-weight: 400 !important; }
+
 .font-bold {
   font-weight: 600; }
 
@@ -84,9 +87,6 @@ html, body {
 
 .border-none {
   border: 0 !important; }
-
-.border-left-none {
-  border-left: 0 !important; }
 
 .breadcrumb-item + .breadcrumb-item:before {
   content: '\f054';
@@ -220,7 +220,13 @@ html, body {
       text-transform: uppercase;
       font-size: 1.4em;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease; }
+      .pushy_menu a:hover {
+        background-color: #262624; }
   .pushy .close-menu {
     float: left;
     font-size: 1.6em;
@@ -292,6 +298,10 @@ html, body {
     border-bottom-color: #EAF0F0; }
   .posts-group .group_heading.brown-line {
     border-bottom-color: #CD7F13; }
+  .posts-group .group_heading.cyan-line {
+    border-bottom-color: #00645A; }
+  .posts-group .group_heading.purple-line {
+    border-bottom-color: #9911B1; }
 
 .group-control .control {
   display: inline-block;
@@ -331,11 +341,11 @@ html, body {
   .post.list-item .post_body {
     padding-left: 1em; }
 .post_thumbnail {
-  min-width: 100px;
-  height: 100px;
-  flex-basis: 100px;
+  min-width: 80px;
+  height: 80px;
+  flex-basis: 80px;
   color: #fff;
-  font-size: 4em;
+  font-size: 3.2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,9 +419,9 @@ html, body {
     display: flex;
     align-items: stretch; }
   .search-wrapper .post_thumbnail {
-    min-width: 80px;
-    height: 80px;
-    flex-basis: 80px;
+    min-width: 64px;
+    height: 64px;
+    flex-basis: 64px;
     font-size: 3.2em;
     position: relative; }
   .search-wrapper .post_count {
@@ -811,5 +821,21 @@ html, body {
   -moz-border-radius: 0;
   /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
   border-radius: 0; }
+
+.table_current-view th {
+  background-color: #00645A;
+  color: #fff;
+  border-color: #00645A;
+  text-align: center;
+  border-bottom: 0 !important; }
+.table_current-view td {
+  width: 50%; }
+  .table_current-view td:first-child {
+    background-color: #EAF0F0; }
+.table-bordered th {
+  font-weight: bold;
+  border-bottom-width: 1px !important; }
+.table-bordered td {
+  border-color: #d7d7d7; }
 
 /*# sourceMappingURL=app.css.map */
