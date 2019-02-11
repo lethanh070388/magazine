@@ -27,6 +27,11 @@
         }
     }
 }
+.logo{
+    img{
+        max-width: 110px;
+    }
+}
 // END HEADER
 
 //NAVIGATION
@@ -475,7 +480,7 @@
         text-align: center;
         img{
             width: 100%;
-            max-width: 272px;
+            max-width: 200px;
         }
     }
     a{

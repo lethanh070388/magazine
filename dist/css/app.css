@@ -124,6 +124,9 @@ html, body {
 @media screen and (max-width: 575px) {
   .ads-header img {
     display: none; } }
+.logo img {
+  max-width: 110px; }
+
 .navbar {
   padding: 0 1rem;
   border-bottom: 5px solid #009688; }
@@ -483,7 +486,7 @@ html, body {
     text-align: center; }
     .footer_logo img {
       width: 100%;
-      max-width: 272px; }
+      max-width: 200px; }
   .footer a {
     color: #009688; }
   .footer .socials {
