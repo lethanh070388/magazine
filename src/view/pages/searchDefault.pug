@@ -8,32 +8,63 @@ block append main-content
                     .group_heading.red-line.font-title.mb-3 Tra cứu
                     .group_content
                         .search_option
-                            h6.text-uppercase Tìm văn bản pháp luật Việt Nam theo định mức
+                            h6.text-uppercase Tìm văn bản pháp luật Việt Nam
                             .input-group.mb-3
-                                .input-group-prepend.w-md-full
-                                    select#ddlType.form-control
-                                        option(selected disabled) Loại định mức
-                                        option(value="1") Xây dựng
-                                        option(value="2") Lắp đặt
-                                        option(value="3") Sửa chữa
-                                        option(value="4") Đô thị
-                                        option(value="5") Khảo sát
-                                        option(value="6") Thí nghiệm vật liệu
-                                        option(value="7") Bom mìn
-                                        option(value="8") Giao thông
-                                        option(value="9") Chống mối
-                                        option(value="10") Hầm lò
-                                        option(value="11") Lắp đặt máy - thiết bị
-                                        option(value="12") Thủy công - thiết bị
-                                        option(value="13") Viễn thông
-                                        option(value="14") Xăng dầu
-                                        option(value="15") Khác
-                                    input#iptFromYear.form-control.datepicker.border-left-0.text-center.date-control(type="text" placeholder="Từ năm")
-                                    input#iptToYear.form-control.datepicker.border-left-0.text-center.date-control(type="text" placeholder="Đến năm")
-                                input.form-control.br-none.search-box(type="text" placeholder="Nhập nội dung văn bản cần tìm..." aria-label="Enter finding text" aria-describedby="button-addon2")
+                                input.form-control.br-none(type="text" placeholder="Nhập nội dung văn bản cần tìm..." aria-label="Enter finding text" aria-describedby="button-addon2")
                                 .input-group-append
-                                    button.btn.btn-white.btn-search(type="button" id="button-addon2")
+                                    button.btn.btn-white(type="button" id="button-addon2")
                                         i.fas.fa-search
+                            .search_advanced
+                                .form-check.form-check-inline
+                                    input.form-check-input(type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance1" value="optionAll")
+                                    label.form-check-label(for="rdoSearchAdvance1") Tất cả
+                                .form-check.form-check-inline
+                                    input.form-check-input(type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance2" value="optionTitle")
+                                    label.form-check-label(for="rdoSearchAdvance2") Tiêu đề
+                                .form-check.form-check-inline
+                                    input.form-check-input(type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance3" value="optionNumber")
+                                    label.form-check-label(for="rdoSearchAdvance3") Số hiệu văn bản
+                                .form-check.form-check-inline
+                                    input.form-check-input(type="checkbox" name="checkFindByWords" id="chkFindByWords" value="optionFindByWord")
+                                    label.form-check-label(for="chkFindByWords") Chính xác cụm từ
+                                .form-check.form-check-inline.ml-auto
+                                    .text-green.font-bold.advance-toggle
+                                        span Nâng cao
+                                        i.pl-1.fas.fa-angle-down.align-middle
+                            .form-row.mt-3.advance-content
+                                .form-group.col-sm-6.col-md-3
+                                    input#iptFrom.form-control.border-none.datepicker(type="text" placeholder="Từ ngày (Ng/Thg/Năm)")
+                                .form-group.col-sm-6.col-md-3
+                                    input#iptFrom.form-control.border-none.datepicker(type="text" placeholder="Đến ngày (Ng/Thg/Năm)")
+                                .form-group.col-sm-6.col-md-3
+                                    select#ddlType.form-control.border-none
+                                        option(selected disabled) Loại văn bản
+                                        option(value="1") Bản ghi nhớ
+                                        option(value="2") Báo cáo
+                                        option(value="3") Biên bản
+                                .form-group.col-sm-6.col-md-3
+                                    select#ddlWhere.form-control.border-none
+                                        option(selected disabled) Cơ quan ban hành
+                                        option(value="1") Ban Bí Thư
+                                        option(value="2") Ban Cán sự Đảng
+                                .form-group.col-sm-6.col-md-3
+                                    select#ddlStatus.form-control.border-none
+                                        option(selected disabled) Tình trạng hiệu lực
+                                        option(value="1") Còn hiệu lực
+                                        option(value="2") Không còn hiệu lực
+                                .form-group.col-sm-6.col-md-3
+                                    select#ddlField.form-control.border-none
+                                        option(selected disabled) Lĩnh vực hoạt động
+                                        option(value="1") An ninh trật tự
+                                        option(value="2") An ninh Quốc gia
+                                        option(value="3") Bảo hiểm
+                                .form-group.col-sm-6.col-md-3
+                                    select#ddlLang.form-control.border-none
+                                        option(selected disabled) Ngôn ngữ
+                                        option(value="1") Tiếng việt
+                                        option(value="2") English
+                                .form-group.col-sm-6.col-md-3
+                                    input#iptSigner.form-control.border-none(type="text" placeholder="Người ký...")
     .container.search-notify.mt-4
         .row
             .col
@@ -203,8 +234,13 @@ block script-append
     script.
         $(function(){
             $('.datepicker').datepicker({
-                format: "yyyy",
-                startView: 2,
-                minViewMode: 2
+                format: "dd/mm/yyyy",
+                todayBtn: "linked"
+            });
+
+            $('.advance-content').hide();
+
+            $('.advance-toggle').click(function(){
+                $('.advance-content').slideToggle(300);
             });
         })

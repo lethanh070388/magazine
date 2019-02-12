@@ -19,17 +19,18 @@ header.header-nav
             .socials
                 a(href="#")
                     i.fab.fa-facebook-f
-                a(href="")
+                a(href="#")
                     i.fas.fa-envelope
-                a(href="")
+                a(href="#")
                     i.fab.fa-twitter
-                a(href="")
+                a(href="#")
                     i.fab.fa-youtube
-                a(href="")
+                a(href="#")
                     i.fab.fa-instagram
             .user-section.ml-auto
-                a(href="#" data-toggle="modal" data-target="#modalLogin") Đăng nhập
-                a(href="./register.html") Đăng ký
+                a(href="#")
+                    i.fas.fa-user.pr-2
+                    | Admin
 .header-banner
     .container.py-4
         .row.m-0.justify-content-center.justify-content-lg-between.flex-lg-nowrap
@@ -62,25 +63,3 @@ header.header-nav
                     a.nav-link(href="./searchByLocalPrice.html") Giá VLXD
                 li.nav-item
                     a.nav-link(href="./searchBySampleText.html") Văn bản mẫu
-
-//- MODAL LOGIN
-#modalLogin.modal.fade(tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true")
-    .modal-dialog(role="document")
-        .modal-content
-            .modal-header
-                h5.modal-title.w-100.text-center.text-green.font-bold#modalLoginLabel Đăng nhập
-                button.close(type="button" data-dismiss="modal" aria-label="Close")
-                    span(aria-hidden="true") &times;
-            .modal-body
-                form.form-group.needs-validation.pt-4(action="#" novalidate)
-                    .form-group
-                        input.form-control(type="text" aria-describedby="username" placeholder="Tên đăng nhập hoặc email" required)
-                        .invalid-feedback Sai tên đăng nhập hoặc email
-                    .form-group
-                        input.form-control(type="text" aria-describedby="password" placeholder="Nhập password" required)
-                        .invalid-feedback Sai password
-                    .form-group.text-right
-                        a.btn.btn-outline-primary(href="./index_logged.html") Đăng nhập
-                    .form-group.text-right
-                        a.text-blue.nowrap(href="./register.html") Đăng ký | 
-                        a.text-blue.nowrap(href="./forget_password.html") Quên mật khẩu?

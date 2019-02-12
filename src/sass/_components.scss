@@ -384,6 +384,22 @@
         color: #777;
     }
 }
+
+@media screen and (max-width: 575px){
+    .post_thumbnail{
+        min-width: 50px;
+        height: 50px;
+        flex-basis: 50px;   
+    }
+}
+@media screen and (max-width: 480px){
+    .post_thumbnail{
+        display: none;  
+    }
+    .post.list-item .post_body {
+        padding-left: 0;
+    }
+}
 .list-wrapper{
     display: flex;
     flex-direction: column;
@@ -517,6 +533,14 @@
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
+@media screen and (max-width: 575px){
+    .footer_logo{
+        img{
+            max-width: 120px;
+        }
+    }
+}
+
 // END FOOTER
 
 // BUTTONS
@@ -898,3 +922,19 @@
     }
 }
 // END TABLE
+
+// DOWNLOAD TAB
+.download{
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        text-align: center;        
+        color: $tb-blue;
+        font-size: 1.5em;
+        &:hover{
+            color: $tb-purple;
+        }
+    }
+}
+// END DOWNLOAD TAB

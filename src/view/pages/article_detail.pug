@@ -1,5 +1,6 @@
 extends ../layouts/layout_homepage.pug
 include ../mixins/_tab.pug
+include ../mixins/_post-control.pug
 block append main-content
     //- .container.search-wrapper.mt-5
     //-     nav(aria-label="breadcrumb")
@@ -196,14 +197,82 @@ block append main-content
                                         tr
                                             td Không có văn bản nào..
                     +tab-item('tab5')
-                        .row
-                            .col Tab 5
+                        .row.search-wrapper
+                            .col.posts-group
+                                .group_content
+                                    .post.post-wrapper.list-item
+                                        .post_thumbnail.tb-red TT                              
+                                        .post_body
+                                            h6.post_title
+                                                a(href="./article_detail.html" title="Thông tư 28/2012/TT-BTC quy định về quản lý vốn đầu tư thuộc nguồn vốn ngân sách xã, phường, thị trấn do Bộ Tài chính ban hành") Thông tư 28/2012/TT-BTC quy định về quản lý vốn đầu tư thuộc nguồn vốn ngân sách xã, phường, thị trấn do Bộ Tài chính ban hành
+                                            +post-control()
+                                        .post_status
+                                            div Ban hành: 
+                                                span 30/01/2019
+                                            div Hiệu lực: 
+                                                span 30/01/2019
+                                            div Tình trạng: 
+                                                span.text-red Còn hiệu lực
+                                            div Cập nhật: 
+                                                span 31/01/2019
+                                    .post.post-wrapper.list-item
+                                        .post_thumbnail.tb-red TT                              
+                                        .post_body
+                                            h6.post_title
+                                                a(href="./article_detail.html" title="Thông tư 09/2016/TT-BTC Quy định về quyết toán dự án hoàn thành thuộc nguồn vốn Nhà nước do Bộ trưởng Bộ Tài chính ban hành") Thông tư 09/2016/TT-BTC Quy định về quyết toán dự án hoàn thành thuộc nguồn vốn Nhà nước do Bộ trưởng Bộ Tài chính ban hành
+                                            +post-control()
+                                        .post_status
+                                            div Ban hành: 
+                                                span 30/01/2019
+                                            div Hiệu lực: 
+                                                span 30/01/2019
+                                            div Tình trạng: 
+                                                span.text-red Còn hiệu lực
+                                            div Cập nhật: 
+                                                span 31/01/2019
                     +tab-item('tab6')
-                        .row
-                            .col Tab 6
+                        .row.search-wrapper
+                            .col.posts-group
+                                .group_content
+                                    .post.post-wrapper.list-item
+                                        .post_thumbnail.tb-blue CV                              
+                                        .post_body
+                                            h6.post_title
+                                                a(href="./article_detail.html" title="Công văn 13496/BTC-ĐT năm 2017 về xử lý dứt điểm tình trạng tồn đọng quyết toán các dự án hoàn thành từ năm 2005 đến năm 2014 do không đủ hồ sơ quyết toán do Bộ Tài chính ban hành") Công văn 13496/BTC-ĐT năm 2017 về xử lý dứt điểm tình trạng tồn đọng quyết toán các dự án hoàn thành từ năm 2005 đến năm 2014 do không đủ hồ sơ quyết toán do Bộ Tài chính ban hành
+                                            +post-control()
+                                        .post_status
+                                            div Ban hành: 
+                                                span 30/01/2019
+                                            div Hiệu lực: 
+                                                span 30/01/2019
+                                            div Tình trạng: 
+                                                span.text-red Còn hiệu lực
+                                            div Cập nhật: 
+                                                span 31/01/2019
+                                    .post.post-wrapper.list-item
+                                        .post_thumbnail.tb-blue CV                             
+                                        .post_body
+                                            h6.post_title
+                                                a(href="./article_detail.html" title="Công văn 2236/BXD-KTXD năm 2017 hướng dẫn thẩm quyền phê duyệt quyết toán dự án hoàn thành do Bộ Xây dựng ban hành") Công văn 2236/BXD-KTXD năm 2017 hướng dẫn thẩm quyền phê duyệt quyết toán dự án hoàn thành do Bộ Xây dựng ban hành
+                                            +post-control()
+                                        .post_status
+                                            div Ban hành: 
+                                                span 30/01/2019
+                                            div Hiệu lực: 
+                                                span 30/01/2019
+                                            div Tình trạng: 
+                                                span.text-red Còn hiệu lực
+                                            div Cập nhật: 
+                                                span 31/01/2019
                     +tab-item('tab7')
                         .row
-                            .col Tab 7
+                            .col.download
+                                a(href="#")
+                                    i.fas.fa-download.pr-2
+                                    | Tải về pdf
+                                a(href="#") 
+                                    i.fas.fa-download.pr-2
+                                    | Tải về văn bản gốc
             .col-lg-3
                 .ads-side
                     img.w-100(src="../assets/ads-side.jpg", alt="")

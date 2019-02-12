@@ -90,37 +90,80 @@
                 <div class="group_heading red-line font-title mb-3">Tra cứu</div>
                 <div class="group_content">
                   <div class="search_option">
-                    <h6 class="text-uppercase">Tìm giá vật liệu xây dựng</h6>
+                    <h6 class="text-uppercase">Tìm văn bản pháp luật Việt Nam</h6>
                     <div class="input-group mb-3">
-                      <div class="input-group-prepend w-md-full">
-                        <select class="form-control" id="ddlType">
-                          <option selected="selected" disabled="disabled">Loại</option>
-                          <option disabled="disabled">---Thép---</option>
-                          <option value="1001">Thép hình</option>
-                          <option value="1002">Thép hộp</option>
-                          <option value="1003">Thép ống</option>
-                          <option value="1004">Thép tấm</option>
-                          <option value="1005">Tôn</option>
-                          <option value="1006">Xà gỗ</option>
-                          <option disabled="disabled">---Thiết bị điện---</option>
-                          <option value="2001">Điện dân dụng</option>
-                          <option value="2002">Điện công nghiệp</option>
-                          <option disabled="disabled">---Vật tư ngành nước---</option>
-                          <option value="3001">Ống nhựa tiền phong</option>
-                          <option value="3002">Bồn nước bình nước</option>
-                          <option disabled="disabled">---Khác---</option>
-                          <option value="4001">Sản phẩm khác</option>
-                        </select>
-                        <select class="form-control border-left-0" id="ddlSupplier">
-                          <option selected="selected" disabled="disabled">Nhà cung cấp</option>
-                          <option value="1">Nhựa Tiền Phong</option>
-                        </select>
-                        <input class="form-control datepicker border-left-0 text-center date-control" id="iptFromYear" type="text" placeholder="Từ năm"/>
-                        <input class="form-control datepicker border-left-0 text-center date-control" id="iptToYear" type="text" placeholder="Đến năm"/>
-                      </div>
-                      <input class="form-control br-none search-box" type="text" placeholder="Nhập nội dung văn bản cần tìm..." aria-label="Enter finding text" aria-describedby="button-addon2"/>
+                      <input class="form-control br-none" type="text" placeholder="Nhập nội dung văn bản cần tìm..." aria-label="Enter finding text" aria-describedby="button-addon2"/>
                       <div class="input-group-append">
-                        <button class="btn btn-white btn-search mr-0" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                        <button class="btn btn-white" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                      </div>
+                    </div>
+                    <div class="search_advanced">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance1" value="optionAll"/>
+                        <label class="form-check-label" for="rdoSearchAdvance1">Tất cả</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance2" value="optionTitle"/>
+                        <label class="form-check-label" for="rdoSearchAdvance2">Tiêu đề</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="seachAdvanceOptions" id="rdoSearchAdvance3" value="optionNumber"/>
+                        <label class="form-check-label" for="rdoSearchAdvance3">Số hiệu văn bản</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="checkFindByWords" id="chkFindByWords" value="optionFindByWord"/>
+                        <label class="form-check-label" for="chkFindByWords">Chính xác cụm từ</label>
+                      </div>
+                      <div class="form-check form-check-inline ml-auto">
+                        <div class="text-green font-bold advance-toggle"><span>Nâng cao</span><i class="pl-1 fas fa-angle-down align-middle"></i></div>
+                      </div>
+                    </div>
+                    <div class="form-row mt-3 advance-content">
+                      <div class="form-group col-sm-6 col-md-3">
+                        <input class="form-control border-none datepicker" id="iptFrom" type="text" placeholder="Từ ngày (Ng/Thg/Năm)"/>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <input class="form-control border-none datepicker" id="iptFrom" type="text" placeholder="Đến ngày (Ng/Thg/Năm)"/>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control border-none" id="ddlType">
+                          <option selected="selected" disabled="disabled">Loại văn bản</option>
+                          <option value="1">Bản ghi nhớ</option>
+                          <option value="2">Báo cáo</option>
+                          <option value="3">Biên bản</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control border-none" id="ddlWhere">
+                          <option selected="selected" disabled="disabled">Cơ quan ban hành</option>
+                          <option value="1">Ban Bí Thư</option>
+                          <option value="2">Ban Cán sự Đảng</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control border-none" id="ddlStatus">
+                          <option selected="selected" disabled="disabled">Tình trạng hiệu lực</option>
+                          <option value="1">Còn hiệu lực</option>
+                          <option value="2">Không còn hiệu lực</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control border-none" id="ddlField">
+                          <option selected="selected" disabled="disabled">Lĩnh vực hoạt động</option>
+                          <option value="1">An ninh trật tự</option>
+                          <option value="2">An ninh Quốc gia</option>
+                          <option value="3">Bảo hiểm</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <select class="form-control border-none" id="ddlLang">
+                          <option selected="selected" disabled="disabled">Ngôn ngữ</option>
+                          <option value="1">Tiếng việt</option>
+                          <option value="2">English</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-6 col-md-3">
+                        <input class="form-control border-none" id="iptSigner" type="text" placeholder="Người ký..."/>
                       </div>
                     </div>
                   </div>
@@ -337,9 +380,14 @@
     <script>
       $(function(){
           $('.datepicker').datepicker({
-              format: "yyyy",
-              startView: 2,
-              minViewMode: 2
+              format: "dd/mm/yyyy",
+              todayBtn: "linked"
+          });
+      
+          $('.advance-content').hide();
+      
+          $('.advance-toggle').click(function(){
+              $('.advance-content').slideToggle(300);
           });
       })
     </script>
