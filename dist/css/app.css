@@ -65,7 +65,10 @@ h2, .h2 {
   color: #e91e63; }
 
 .bg-dark {
-  color: #303030 !important; }
+  background-color: #303030 !important; }
+
+.bg-grey {
+  background-color: #EAF0F0 !important; }
 
 html, body {
   height: 100%; }
@@ -809,6 +812,9 @@ html, body {
   .modal-dialog {
     max-width: 320px;
     margin: 1.75rem auto; } }
+.custom-lg-modal {
+  max-width: 90% !important; }
+
 .table .name {
   font-weight: bold; }
 

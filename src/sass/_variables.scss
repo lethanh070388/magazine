@@ -41,11 +41,12 @@ $text-colors: map-merge((
 // BACKGROUND COLORS
 $bg-colors: () !default;
 $bg-colors: map-merge((
-    "bg-dark": $dark-grey
+    "bg-dark": $dark-grey,
+    "bg-grey": $tb-grey
 ), $bg-colors);
 
 @each $name,$color in $bg-colors{
     .#{$name}{
-        color: $color !important;
+        background-color: $color !important;
     }
 }
